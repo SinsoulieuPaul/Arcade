@@ -12,7 +12,7 @@ One of the main objectives of this project was to be able to dynamically switch 
 
 ## Requirements
 
-`build`
+`Build`
 - C++20 Compiler
 - make
 
