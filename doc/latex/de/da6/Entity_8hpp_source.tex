@@ -1,0 +1,51 @@
+\hypertarget{Entity_8hpp_source}{}\doxysection{Entity.\+hpp}
+\label{Entity_8hpp_source}\index{src/lib/games/Entity.hpp@{src/lib/games/Entity.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Entity}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef ENTITY\_HPP\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define ENTITY\_HPP\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}IGameModule.hpp"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classEntity}{Entity}} \{}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \mbox{\hyperlink{classEntity}{Entity}}();}
+\DoxyCodeLine{17         \mbox{\hyperlink{classEntity}{Entity}}(EntityType);}
+\DoxyCodeLine{18         \mbox{\hyperlink{classEntity}{Entity}}(EntityType, std::vector<float>);}
+\DoxyCodeLine{19         \mbox{\hyperlink{classEntity}{\string~Entity}}();}
+\DoxyCodeLine{20         \textcolor{comment}{// Setters}}
+\DoxyCodeLine{21         \textcolor{keywordtype}{void} setProperty(Property, \textcolor{keywordtype}{int});}
+\DoxyCodeLine{22         \textcolor{keywordtype}{void} setProperty(Property, \textcolor{keywordtype}{float});}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} setProperty(Property, std::vector<float>);}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} setProperty(Property, std::vector<int>);}
+\DoxyCodeLine{25         \textcolor{comment}{// Getters}}
+\DoxyCodeLine{26         std::vector<float> getProperty(Property);}
+\DoxyCodeLine{27         std::map<Property, std::vector<float>> getProperties();}
+\DoxyCodeLine{28         EntityType getType();}
+\DoxyCodeLine{29         Name getName();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         std::string *getSpritePath() \textcolor{keyword}{const};}
+\DoxyCodeLine{32         \textcolor{keywordtype}{void} setSpritePath(std::string *spritePath);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \textcolor{keywordtype}{char} getSpriteChar() \textcolor{keyword}{const};}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} setSpriteChar(\textcolor{keywordtype}{char} spriteChar);}
+\DoxyCodeLine{36     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{37         std::map<Property, std::vector<float>> \_properties;}
+\DoxyCodeLine{38         EntityType \_type;}
+\DoxyCodeLine{39         Name \_name;}
+\DoxyCodeLine{40         \textcolor{keywordtype}{void} *\_clickAction;}
+\DoxyCodeLine{41         std::string *\_spritePath;}
+\DoxyCodeLine{42         \textcolor{keywordtype}{char} \_spriteChar;}
+\DoxyCodeLine{43 \};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !ENTITY\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

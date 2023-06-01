@@ -1,0 +1,910 @@
+\hypertarget{classSnake}{}\doxysection{Snake Class Reference}
+\label{classSnake}\index{Snake@{Snake}}
+Inheritance diagram for Snake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d5/d08/classSnake}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSnake_aa9cbcdb4b25d84cbf83509039cac8d01}{Snake}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSnake}{Snake}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSnake_a941fbaad96ee33ca3a7c30c28ca44ef8}{$\sim$\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSnake}{Snake}} destructor. \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classSnake_a24ddf54c6e42c0cc427acae27e52cede}{system\+Init}} () override
+\begin{DoxyCompactList}\small\item\em system\+Init function \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classSnake_a1c16d90a0dac982619b05b0b409bb7c7}{system\+Start}} () override
+\begin{DoxyCompactList}\small\item\em system\+Start function \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classSnake_af3b1ca6fe1d0e03641c6ba7b42c4425c}{system\+Stop}} () override
+\begin{DoxyCompactList}\small\item\em system\+Stop function \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classSnake_a8d27072a1b1d81b6603eb1f7d9739e75}{system\+Clear}} () override
+\begin{DoxyCompactList}\small\item\em system\+Clear function \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classSnake_a4fce0b11e740706c10943a2e7b24f028}{system\+Update}} () override
+\begin{DoxyCompactList}\small\item\em system\+Update function \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classSnake_a46109f1ba60e466b0689ead8420c0ff4}{system\+Get\+State}} () const override
+\begin{DoxyCompactList}\small\item\em system\+Get\+State function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSnake_aaecd535fbb6a05f378618f3196c15762}{system\+Set\+State}} (State) override
+\begin{DoxyCompactList}\small\item\em system\+Set\+State function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSnake_ab17afd884b638aa2786ee2b8465a8e6d}{system\+On\+User\+Input}} (int) override
+\begin{DoxyCompactList}\small\item\em system\+On\+User\+Input function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSnake_ab333d074ed36c11fb52b090a1db19faf}{system\+Debug}} () override
+\begin{DoxyCompactList}\small\item\em system\+Debug function \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$ \mbox{\hyperlink{classSnake_a2aabcbb91134ad0cae6dae50b144f520}{prop\+Get\+All}} () override
+\begin{DoxyCompactList}\small\item\em prop\+Get\+All function \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{classSnake_a60a6864db02da58d151724015ba32c8f}{entity\+Get\+All}} () override
+\begin{DoxyCompactList}\small\item\em entity\+Get\+All function \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classSnake_aaaa64181ccc4bf40dd35b7e2a6b282af}{entity\+Get}} (Id) override
+\begin{DoxyCompactList}\small\item\em entity\+Get function \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classSnake_acbc85814b2768fd43c0980cd210fdca4}{entity\+Get}} (Name) override
+\begin{DoxyCompactList}\small\item\em entity\+Get function \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{classSnake_aa36d04a2d93cdac83b41498870e66a97}{entity\+Get\+All\+Of\+Type}} (Entity\+Type) override
+\begin{DoxyCompactList}\small\item\em entity\+Get\+All\+Of\+Type function \end{DoxyCompactList}\item 
+Id \mbox{\hyperlink{classSnake_a1fb753a89c9b670efac54c1bd0a8cbdd}{entity\+Get\+Id}} (Name) override
+\begin{DoxyCompactList}\small\item\em entityget\+Id function \end{DoxyCompactList}\item 
+Name \mbox{\hyperlink{classSnake_a5cadd2ec37aa2851890e2bd8d76a48a2}{entity\+Get\+Name}} (Id) override
+\begin{DoxyCompactList}\small\item\em entity\+Get\+Name function \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classSnake_aabad274968f470e1c5092f63c00de964}{entity\+Get\+Property}} (Id, Property) override
+\begin{DoxyCompactList}\small\item\em entity\+Get\+Property function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_a9b4b3275caba4c3e5fed586e4cdc90b1}{entity\+Update}} (Id, Property, int) override
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_a13b29bca55d683dacee4356705bda3b7}{entity\+Update}} (Id, Property, float) override
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_a825594295fe8f2eef5bdb1f7ec2c7286}{entity\+Update}} (Id, Property, std\+::vector$<$ float $>$) override
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_a85ec69ccddf9d922c3c0b323afe96d05}{entity\+Update}} (Id, Property, std\+::vector$<$ int $>$) override
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_a622fce8990c371d65b10b5dcaa321c6a}{entity\+Update}} (Id, Property, Name) override
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSnake_ad5429e9051864a7d976ef4f5fa2a28cb}\label{classSnake_ad5429e9051864a7d976ef4f5fa2a28cb}} 
+bool {\bfseries entity\+Push} (\mbox{\hyperlink{classEntity}{Entity}}) override
+\item 
+\mbox{\Hypertarget{classSnake_a9507811aa2f935a2f915bb715b69e6a3}\label{classSnake_a9507811aa2f935a2f915bb715b69e6a3}} 
+bool {\bfseries entity\+Push\+\_\+front} (\mbox{\hyperlink{classEntity}{Entity}}) override
+\item 
+bool \mbox{\hyperlink{classSnake_a253f7d746ee0bd637aac69119231a3b9}{entity\+Remove}} (Id) override
+\begin{DoxyCompactList}\small\item\em entity\+Remove function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_ad260e790bf4a629bbe753a271f0c1e29}{entity\+Pop}} () override
+\begin{DoxyCompactList}\small\item\em entity\+Remove function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_aa09ca9def75ade4b2de4b55d00d598ba}{entity\+Pop\+\_\+front}} () override
+\begin{DoxyCompactList}\small\item\em entity\+Pop\+\_\+front function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSnake_a8b201e35a74359a6673198d4c7aa80b6}{entity\+Clear\+All}} () override
+\begin{DoxyCompactList}\small\item\em entity\+Clear\+All function \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classText}{Text}} $\ast$ $>$ \mbox{\hyperlink{classSnake_a889f21bff060f869fe00a8290e8cdb69}{text\+Get\+All}} () override
+\begin{DoxyCompactList}\small\item\em text\+Get\+All function \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSnake_a241ef3db2d6f7b3459b7dc58043ff17d}{get\+Score}} () const override
+\begin{DoxyCompactList}\small\item\em get\+Score function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSnake_afd711041938205260bf89e956f4ca086}{set\+Score}} (int score) override
+\begin{DoxyCompactList}\small\item\em set\+Score function \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$ \mbox{\hyperlink{classSnake_a6c8d022148079fb4f75f54a34d9d77fc}{prop\+Get\+All\+Of\+Type}} (Prop\+Type) override
+\begin{DoxyCompactList}\small\item\em prop\+Get\+All\+Of\+Type function \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSnake_aadc0f804ee4a3feb751dc5496584c557}\label{classSnake_aadc0f804ee4a3feb751dc5496584c557}} 
+bool {\bfseries prop\+Remove} (\mbox{[}\mbox{[}maybe\+\_\+unused\mbox{]}\mbox{]}Id id) override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSnake_ac96d5733913d177d84fc0d50856c3785}\label{classSnake_ac96d5733913d177d84fc0d50856c3785}} 
+State {\bfseries \+\_\+state}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSnake_aa9cbcdb4b25d84cbf83509039cac8d01}\label{classSnake_aa9cbcdb4b25d84cbf83509039cac8d01}} 
+\index{Snake@{Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}}
+{\footnotesize\ttfamily Snake\+::\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classSnake}{Snake}} constructor. 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSnake_a941fbaad96ee33ca3a7c30c28ca44ef8}\label{classSnake_a941fbaad96ee33ca3a7c30c28ca44ef8}} 
+\index{Snake@{Snake}!````~Snake@{$\sim$Snake}}
+\index{````~Snake@{$\sim$Snake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{$\sim$Snake()}{~Snake()}}
+{\footnotesize\ttfamily Snake\+::$\sim$\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classSnake}{Snake}} destructor. 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSnake_a8b201e35a74359a6673198d4c7aa80b6}\label{classSnake_a8b201e35a74359a6673198d4c7aa80b6}} 
+\index{Snake@{Snake}!entityClearAll@{entityClearAll}}
+\index{entityClearAll@{entityClearAll}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityClearAll()}{entityClearAll()}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Clear\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Clear\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_adf79a4f7841c14f20f165e4ec9d4b791}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_aaaa64181ccc4bf40dd35b7e2a6b282af}\label{classSnake_aaaa64181ccc4bf40dd35b7e2a6b282af}} 
+\index{Snake@{Snake}!entityGet@{entityGet}}
+\index{entityGet@{entityGet}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityGet()}{entityGet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Snake\+::entity\+Get (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Get function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a68cd0244c1e94841ddab8a6bc60c25d8}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_acbc85814b2768fd43c0980cd210fdca4}\label{classSnake_acbc85814b2768fd43c0980cd210fdca4}} 
+\index{Snake@{Snake}!entityGet@{entityGet}}
+\index{entityGet@{entityGet}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityGet()}{entityGet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Snake\+::entity\+Get (\begin{DoxyParamCaption}\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Get function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a2caa3aea2fb5149d51dc25049de3dbfb}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a60a6864db02da58d151724015ba32c8f}\label{classSnake_a60a6864db02da58d151724015ba32c8f}} 
+\index{Snake@{Snake}!entityGetAll@{entityGetAll}}
+\index{entityGetAll@{entityGetAll}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityGetAll()}{entityGetAll()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ Snake\+::entity\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Get\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a26f7c0b2b6a119e8cd269c8681287935}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_aa36d04a2d93cdac83b41498870e66a97}\label{classSnake_aa36d04a2d93cdac83b41498870e66a97}} 
+\index{Snake@{Snake}!entityGetAllOfType@{entityGetAllOfType}}
+\index{entityGetAllOfType@{entityGetAllOfType}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityGetAllOfType()}{entityGetAllOfType()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ Snake\+::entity\+Get\+All\+Of\+Type (\begin{DoxyParamCaption}\item[{Entity\+Type}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Get\+All\+Of\+Type function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Entity\+Type} & type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a575fc0319f21d60890ee8ea2a84de653}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a1fb753a89c9b670efac54c1bd0a8cbdd}\label{classSnake_a1fb753a89c9b670efac54c1bd0a8cbdd}} 
+\index{Snake@{Snake}!entityGetId@{entityGetId}}
+\index{entityGetId@{entityGetId}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityGetId()}{entityGetId()}}
+{\footnotesize\ttfamily Id Snake\+::entity\+Get\+Id (\begin{DoxyParamCaption}\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entityget\+Id function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id id 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a8eb128788b1ff5f5349246e8c086f38d}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a5cadd2ec37aa2851890e2bd8d76a48a2}\label{classSnake_a5cadd2ec37aa2851890e2bd8d76a48a2}} 
+\index{Snake@{Snake}!entityGetName@{entityGetName}}
+\index{entityGetName@{entityGetName}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityGetName()}{entityGetName()}}
+{\footnotesize\ttfamily Name Snake\+::entity\+Get\+Name (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Get\+Name function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name name 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a424c532d2cbf598a7a0d4f2ef42f264c}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_aabad274968f470e1c5092f63c00de964}\label{classSnake_aabad274968f470e1c5092f63c00de964}} 
+\index{Snake@{Snake}!entityGetProperty@{entityGetProperty}}
+\index{entityGetProperty@{entityGetProperty}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityGetProperty()}{entityGetProperty()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Snake\+::entity\+Get\+Property (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Get\+Property function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a88e56e96b57634cecd98c71131f3dede}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_ad260e790bf4a629bbe753a271f0c1e29}\label{classSnake_ad260e790bf4a629bbe753a271f0c1e29}} 
+\index{Snake@{Snake}!entityPop@{entityPop}}
+\index{entityPop@{entityPop}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityPop()}{entityPop()}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Remove function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_acee974cdb727b36265a4be69a8e569eb}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_aa09ca9def75ade4b2de4b55d00d598ba}\label{classSnake_aa09ca9def75ade4b2de4b55d00d598ba}} 
+\index{Snake@{Snake}!entityPop\_front@{entityPop\_front}}
+\index{entityPop\_front@{entityPop\_front}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityPop\_front()}{entityPop\_front()}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Pop\+\_\+front function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a630ad14a6114b10b282d92f76b7fb34b}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a253f7d746ee0bd637aac69119231a3b9}\label{classSnake_a253f7d746ee0bd637aac69119231a3b9}} 
+\index{Snake@{Snake}!entityRemove@{entityRemove}}
+\index{entityRemove@{entityRemove}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityRemove()}{entityRemove()}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Remove (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Remove function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a9fb0afd38c91a157bd4ae8d7be9f8144}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a13b29bca55d683dacee4356705bda3b7}\label{classSnake_a13b29bca55d683dacee4356705bda3b7}} 
+\index{Snake@{Snake}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em float} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_ae8b97976e08de50b0ee92cb0355d58ac}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a9b4b3275caba4c3e5fed586e4cdc90b1}\label{classSnake_a9b4b3275caba4c3e5fed586e4cdc90b1}} 
+\index{Snake@{Snake}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em int} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_ad294a0b0f9d5c6c928f8fa88ac99d433}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a622fce8990c371d65b10b5dcaa321c6a}\label{classSnake_a622fce8990c371d65b10b5dcaa321c6a}} 
+\index{Snake@{Snake}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_ac795456763b6e6927e9dff8b48809953}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a825594295fe8f2eef5bdb1f7ec2c7286}\label{classSnake_a825594295fe8f2eef5bdb1f7ec2c7286}} 
+\index{Snake@{Snake}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{std\+::vector$<$ float $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em std\+::vector$<$float$>$} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a42a94e8a44423f10065f8be03a6270af}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a85ec69ccddf9d922c3c0b323afe96d05}\label{classSnake_a85ec69ccddf9d922c3c0b323afe96d05}} 
+\index{Snake@{Snake}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily bool Snake\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em std\+::vector$<$int$>$} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_af63189384c4dc033fe9072e40ec31c55}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a241ef3db2d6f7b3459b7dc58043ff17d}\label{classSnake_a241ef3db2d6f7b3459b7dc58043ff17d}} 
+\index{Snake@{Snake}!getScore@{getScore}}
+\index{getScore@{getScore}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Snake\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_ad97633ec7a2c24a7e67d31f27ca47958}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a2aabcbb91134ad0cae6dae50b144f520}\label{classSnake_a2aabcbb91134ad0cae6dae50b144f520}} 
+\index{Snake@{Snake}!propGetAll@{propGetAll}}
+\index{propGetAll@{propGetAll}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{propGetAll()}{propGetAll()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$ Snake\+::prop\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+prop\+Get\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Prop $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a45b0da6860944b50da4f779c3a4b026f}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a6c8d022148079fb4f75f54a34d9d77fc}\label{classSnake_a6c8d022148079fb4f75f54a34d9d77fc}} 
+\index{Snake@{Snake}!propGetAllOfType@{propGetAllOfType}}
+\index{propGetAllOfType@{propGetAllOfType}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{propGetAllOfType()}{propGetAllOfType()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$ Snake\+::prop\+Get\+All\+Of\+Type (\begin{DoxyParamCaption}\item[{Prop\+Type}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+prop\+Get\+All\+Of\+Type function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Prop\+Type} & type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Prop $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a65ce205ce74ef27c36715e312d342ab8}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_afd711041938205260bf89e956f4ca086}\label{classSnake_afd711041938205260bf89e956f4ca086}} 
+\index{Snake@{Snake}!setScore@{setScore}}
+\index{setScore@{setScore}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily void Snake\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & score \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_ab1a197839244f6e8447154bacf5edc7c}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a8d27072a1b1d81b6603eb1f7d9739e75}\label{classSnake_a8d27072a1b1d81b6603eb1f7d9739e75}} 
+\index{Snake@{Snake}!systemClear@{systemClear}}
+\index{systemClear@{systemClear}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemClear()}{systemClear()}}
+{\footnotesize\ttfamily State Snake\+::system\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Clear function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_aba126ca8718741918d10d66bad29a3d9}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_ab333d074ed36c11fb52b090a1db19faf}\label{classSnake_ab333d074ed36c11fb52b090a1db19faf}} 
+\index{Snake@{Snake}!systemDebug@{systemDebug}}
+\index{systemDebug@{systemDebug}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemDebug()}{systemDebug()}}
+{\footnotesize\ttfamily void Snake\+::system\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Debug function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a6d11d5c0af6f1ef90d14f94385cfa0b0}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a46109f1ba60e466b0689ead8420c0ff4}\label{classSnake_a46109f1ba60e466b0689ead8420c0ff4}} 
+\index{Snake@{Snake}!systemGetState@{systemGetState}}
+\index{systemGetState@{systemGetState}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemGetState()}{systemGetState()}}
+{\footnotesize\ttfamily State Snake\+::system\+Get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Get\+State function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_ad85ae1e85576a8622db9064c53025a76}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a24ddf54c6e42c0cc427acae27e52cede}\label{classSnake_a24ddf54c6e42c0cc427acae27e52cede}} 
+\index{Snake@{Snake}!systemInit@{systemInit}}
+\index{systemInit@{systemInit}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemInit()}{systemInit()}}
+{\footnotesize\ttfamily State Snake\+::system\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Init function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a2702c98b4c96a13d7b5582ce93eb6db9}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_ab17afd884b638aa2786ee2b8465a8e6d}\label{classSnake_ab17afd884b638aa2786ee2b8465a8e6d}} 
+\index{Snake@{Snake}!systemOnUserInput@{systemOnUserInput}}
+\index{systemOnUserInput@{systemOnUserInput}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemOnUserInput()}{systemOnUserInput()}}
+{\footnotesize\ttfamily void Snake\+::system\+On\+User\+Input (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+On\+User\+Input function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a5f334bbe9bda6d8d11a861cae92a9ef5}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_aaecd535fbb6a05f378618f3196c15762}\label{classSnake_aaecd535fbb6a05f378618f3196c15762}} 
+\index{Snake@{Snake}!systemSetState@{systemSetState}}
+\index{systemSetState@{systemSetState}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemSetState()}{systemSetState()}}
+{\footnotesize\ttfamily void Snake\+::system\+Set\+State (\begin{DoxyParamCaption}\item[{State}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Set\+State function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em State} & state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a88416f940d6e6b1dc41a0aaa24b8644f}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a1c16d90a0dac982619b05b0b409bb7c7}\label{classSnake_a1c16d90a0dac982619b05b0b409bb7c7}} 
+\index{Snake@{Snake}!systemStart@{systemStart}}
+\index{systemStart@{systemStart}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemStart()}{systemStart()}}
+{\footnotesize\ttfamily State Snake\+::system\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Start function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_afe5fec581fba72e8669353b22db5917d}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_af3b1ca6fe1d0e03641c6ba7b42c4425c}\label{classSnake_af3b1ca6fe1d0e03641c6ba7b42c4425c}} 
+\index{Snake@{Snake}!systemStop@{systemStop}}
+\index{systemStop@{systemStop}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemStop()}{systemStop()}}
+{\footnotesize\ttfamily State Snake\+::system\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Stop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a2577531c3bd27c5b7b152bac07ac3b2d}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a4fce0b11e740706c10943a2e7b24f028}\label{classSnake_a4fce0b11e740706c10943a2e7b24f028}} 
+\index{Snake@{Snake}!systemUpdate@{systemUpdate}}
+\index{systemUpdate@{systemUpdate}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{systemUpdate()}{systemUpdate()}}
+{\footnotesize\ttfamily State Snake\+::system\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a86198adaf9adffc79fa110563d6157f5}{AGame}}.
+
+\mbox{\Hypertarget{classSnake_a889f21bff060f869fe00a8290e8cdb69}\label{classSnake_a889f21bff060f869fe00a8290e8cdb69}} 
+\index{Snake@{Snake}!textGetAll@{textGetAll}}
+\index{textGetAll@{textGetAll}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{textGetAll()}{textGetAll()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classText}{Text}} $\ast$ $>$ Snake\+::text\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+text\+Get\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Text $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classAGame_a44629405897405766b4a835f88b8a83a}{AGame}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/games/\+Snake/Snake.\+hpp\item 
+src/lib/games/\+Snake/Snake.\+cpp\end{DoxyCompactItemize}

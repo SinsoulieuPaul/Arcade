@@ -1,0 +1,66 @@
+\hypertarget{IDisplayModule_8hpp_source}{}\doxysection{IDisplay\+Module.\+hpp}
+\label{IDisplayModule_8hpp_source}\index{src/lib/graphical/IDisplayModule.hpp@{src/lib/graphical/IDisplayModule.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** IDisplayModule}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <cstddef>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}../games/IGameModule.hpp"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}../games/Entity.hpp"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}../games/Prop.hpp"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}../games/Text.hpp"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classIDispModule}{IDispModule}} \{}
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} initScreen() = 0;}
+\DoxyCodeLine{23         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} display() = 0;}
+\DoxyCodeLine{24         \textcolor{keyword}{virtual} Key getUserInput() = 0;}
+\DoxyCodeLine{25         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} drawEntity(\mbox{\hyperlink{classEntity}{Entity}} *) = 0;}
+\DoxyCodeLine{26         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} drawEntity(std::vector<Entity *>) = 0;}
+\DoxyCodeLine{27         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} drawProp(\mbox{\hyperlink{classProp}{Prop}} *) = 0;}
+\DoxyCodeLine{28         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} drawProp(std::vector<Prop *>) = 0;}
+\DoxyCodeLine{29         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} drawText(\mbox{\hyperlink{classText}{Text}} *) = 0;}
+\DoxyCodeLine{30         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} drawText(std::vector<Text *>) = 0;}
+\DoxyCodeLine{31         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} clearAll() = 0;}
+\DoxyCodeLine{32         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} clearEntity(Id) = 0;}
+\DoxyCodeLine{33         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} clearEntity(std::vector<Id>) = 0;}
+\DoxyCodeLine{34         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} clearProp(Id) = 0;}
+\DoxyCodeLine{35         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} clearProp(std::vector<Id>) = 0;}
+\DoxyCodeLine{36         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} clearText(Id) = 0;}
+\DoxyCodeLine{37         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} clearText(std::vector<Id>) = 0;}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} addText(\mbox{\hyperlink{classText}{Text}} *) = 0;}
+\DoxyCodeLine{40         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} addEntity(\mbox{\hyperlink{classEntity}{Entity}} *) = 0;}
+\DoxyCodeLine{41         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} addProp(\mbox{\hyperlink{classProp}{Prop}} *) = 0;}
+\DoxyCodeLine{42         \textcolor{comment}{// Clear \& draw}}
+\DoxyCodeLine{43         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} update() = 0;}
+\DoxyCodeLine{44         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} updateEntity(Id, \mbox{\hyperlink{classEntity}{Entity}} *) = 0;}
+\DoxyCodeLine{45         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} updateEntity(std::vector<std::pair<Id, Entity *>>) = 0;}
+\DoxyCodeLine{46         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} updateProp(Id, \mbox{\hyperlink{classProp}{Prop}} *) = 0;}
+\DoxyCodeLine{47         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} updateProp(std::vector<std::pair<Id, Prop *>>) = 0;}
+\DoxyCodeLine{48         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} updateText(Id, \mbox{\hyperlink{classText}{Text}} *) = 0;}
+\DoxyCodeLine{49         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} updateText(std::vector<std::pair<Id, Text *>>) = 0;}
+\DoxyCodeLine{50         \textcolor{comment}{// Puterror}}
+\DoxyCodeLine{51         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} displayError() = 0;}
+\DoxyCodeLine{52         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} sceneSwitch() = 0;}
+\DoxyCodeLine{53         \textcolor{comment}{// Useless}}
+\DoxyCodeLine{54         \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} getFPS() = 0;}
+\DoxyCodeLine{55         \textcolor{comment}{// check if lib works}}
+\DoxyCodeLine{56         \textcolor{comment}{// Useless}}
+\DoxyCodeLine{57         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} debug() = 0;}
+\DoxyCodeLine{58         \textcolor{keyword}{virtual} std::vector<float> getRes() = 0;}
+\DoxyCodeLine{59         \textcolor{keyword}{virtual} std::vector<float> getSize() = 0;}
+\DoxyCodeLine{60 \};}
+
+\end{DoxyCode}

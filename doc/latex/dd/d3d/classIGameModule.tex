@@ -1,0 +1,1259 @@
+\hypertarget{classIGameModule}{}\doxysection{IGame\+Module Class Reference}
+\label{classIGameModule}\index{IGameModule@{IGameModule}}
+Inheritance diagram for IGame\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{dd/d3d/classIGameModule}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual State \mbox{\hyperlink{classIGameModule_ad1ee09490c847eddbbf4f6ee6d100051}{system\+Init}} ()=0
+\begin{DoxyCompactList}\small\item\em system\+Init function \end{DoxyCompactList}\item 
+virtual State \mbox{\hyperlink{classIGameModule_a2e46b970c93dbe542a3d848e7559fa9e}{system\+Start}} ()=0
+\begin{DoxyCompactList}\small\item\em system\+Start function \end{DoxyCompactList}\item 
+virtual State \mbox{\hyperlink{classIGameModule_aca562a0b54e96e21096fe7ce88091c6c}{system\+Stop}} ()=0
+\begin{DoxyCompactList}\small\item\em system\+Stop function \end{DoxyCompactList}\item 
+virtual State \mbox{\hyperlink{classIGameModule_ae1d2b6834e134d4fd90e0d51f5656604}{system\+Clear}} ()=0
+\begin{DoxyCompactList}\small\item\em system\+Clear function \end{DoxyCompactList}\item 
+virtual State \mbox{\hyperlink{classIGameModule_a0d8ff7eab66349fe41901dad4809e95c}{system\+Update}} ()=0
+\begin{DoxyCompactList}\small\item\em system\+Update function \end{DoxyCompactList}\item 
+virtual State \mbox{\hyperlink{classIGameModule_a238d3509ea530f92c3b914ed0592bf9c}{system\+Get\+State}} () const =0
+\begin{DoxyCompactList}\small\item\em system\+Get\+State function \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIGameModule_aa6e72a18e3d33a0108c9749271d57521}{system\+Set\+State}} (State)=0
+\begin{DoxyCompactList}\small\item\em system\+Set\+State function \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIGameModule_ad4a30d1cee37bb2b703872e51f49a34e}{system\+On\+User\+Input}} (int)=0
+\begin{DoxyCompactList}\small\item\em system\+On\+User\+Input function \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIGameModule_a563d50c8bdb18a0646a987e1de688154}{system\+Debug}} ()=0
+\begin{DoxyCompactList}\small\item\em system\+Debug function \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{classIGameModule_a0e4b1642bb77ffd8f4a45c12d74db44b}{entity\+Get\+All}} ()=0
+\begin{DoxyCompactList}\small\item\em entity\+Get\+All function \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classIGameModule_a90a5a6ad841e6b5e8dede712b7b3ee01}{entity\+Get}} (Id)=0
+\begin{DoxyCompactList}\small\item\em entity\+Get function \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classIGameModule_a500ab40dacf562d0d472dcb81bdf92d9}{entity\+Get}} (Name)=0
+\begin{DoxyCompactList}\small\item\em entity\+Get function \end{DoxyCompactList}\item 
+virtual std\+::vector$<$\+::\mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{classIGameModule_a54717736510474b0f5833dc2a7a9cca6}{entity\+Get\+All\+Of\+Type}} (Entity\+Type)=0
+\begin{DoxyCompactList}\small\item\em entity\+Get\+All\+Of\+Type function \end{DoxyCompactList}\item 
+virtual Id \mbox{\hyperlink{classIGameModule_a55b75e16eb1e043416a6a796a2f09d81}{entity\+Get\+Id}} (Name)=0
+\begin{DoxyCompactList}\small\item\em entityget\+Id function \end{DoxyCompactList}\item 
+virtual Name \mbox{\hyperlink{classIGameModule_a6b1be7f24224de8b79786a954ab3db27}{entity\+Get\+Name}} (Id)=0
+\begin{DoxyCompactList}\small\item\em entity\+Get\+Name function \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ float $>$ \mbox{\hyperlink{classIGameModule_a3f74a05c2cb6829fe18719cbfbaa5fef}{entity\+Get\+Property}} (Id, Property)=0
+\begin{DoxyCompactList}\small\item\em entity\+Get\+Property function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a2de9b46c6a63ebca45f1908c26575beb}{entity\+Update}} (Id, Property, int)=0
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a01e652564d5c66feefc0bf4adf65e915}{entity\+Update}} (Id, Property, float)=0
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a947302397ac05c574839a5d65fe8f5a4}{entity\+Update}} (Id, Property, std\+::vector$<$ float $>$)=0
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_ab8b838670eeb506740525ef3a226c817}{entity\+Update}} (Id, Property, std\+::vector$<$ int $>$)=0
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_ad1c9752bcf0e58087a6b5d4b80f5b3eb}{entity\+Update}} (Id, Property, Name)=0
+\begin{DoxyCompactList}\small\item\em entity\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_ab3bb433f50ef32159cce789bbdcd1974}{entity\+Push}} (\+::\mbox{\hyperlink{classEntity}{Entity}})=0
+\begin{DoxyCompactList}\small\item\em entity\+Push function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_ae409bde94afd5b796473331eadc77d98}{entity\+Push\+\_\+front}} (\+::\mbox{\hyperlink{classEntity}{Entity}})=0
+\begin{DoxyCompactList}\small\item\em entity\+Push\+\_\+front function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a232651f839fdd17c546a4ba9f181e5d5}{entity\+Remove}} (Id)=0
+\begin{DoxyCompactList}\small\item\em entity\+Remove function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a24f805607d570bc214871a44667f4315}{entity\+Pop}} ()=0
+\begin{DoxyCompactList}\small\item\em entity\+Remove function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_ab35d24283285b43194447898f15ab2bf}{entity\+Pop\+\_\+front}} ()=0
+\begin{DoxyCompactList}\small\item\em entity\+Pop\+\_\+front function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a7b758de827b607986e3c46cbae15908b}{entity\+Clear\+All}} ()=0
+\begin{DoxyCompactList}\small\item\em entity\+Clear\+All function \end{DoxyCompactList}\item 
+virtual std\+::vector$<$\+::\mbox{\hyperlink{classText}{Text}} $\ast$ $>$ \mbox{\hyperlink{classIGameModule_a443b10245f93b5a7076376c9416c993f}{text\+Get\+All}} ()=0
+\begin{DoxyCompactList}\small\item\em text\+Get\+All function \end{DoxyCompactList}\item 
+virtual std\+::vector$<$\+::\mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$ \mbox{\hyperlink{classIGameModule_ac22d4e511d53749225fe63aaf7983de5}{prop\+Get\+All}} ()=0
+\begin{DoxyCompactList}\small\item\em prop\+Get\+All function \end{DoxyCompactList}\item 
+virtual \+::\mbox{\hyperlink{classProp}{Prop}} \mbox{\hyperlink{classIGameModule_a5694d3c1754e93f69aff646670212346}{prop\+Get}} (Id)=0
+\begin{DoxyCompactList}\small\item\em prop\+Get function \end{DoxyCompactList}\item 
+virtual std\+::vector$<$\+::\mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$ \mbox{\hyperlink{classIGameModule_a60bc409129d2cdab367756dc4949a9a3}{prop\+Get\+All\+Of\+Type}} (Prop\+Type)=0
+\begin{DoxyCompactList}\small\item\em prop\+Get\+All\+Of\+Type function \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ float $>$ \mbox{\hyperlink{classIGameModule_a5b0df9bcf4ea68b6cd4ebe9de2053558}{prop\+Get\+Property}} (Id, Property)=0
+\begin{DoxyCompactList}\small\item\em prop\+Get\+Property function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_ae91291bd0f309031a65942a398d7cda1}{prop\+Update}} (Id, Property, int)=0
+\begin{DoxyCompactList}\small\item\em prop\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a4a6e085f8d7e6e5227aaaea01e62f3fd}{prop\+Update}} (Id, Property, float)=0
+\begin{DoxyCompactList}\small\item\em prop\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a3503fe091c6abe5a16d0121872546aaa}{prop\+Update}} (Id, Property, std\+::vector$<$ float $>$)=0
+\begin{DoxyCompactList}\small\item\em prop\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_af4acb62f78533c0974070a0f0ec801a8}{prop\+Update}} (Id, Property, std\+::vector$<$ int $>$)=0
+\begin{DoxyCompactList}\small\item\em prop\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a8ecc2328cba4e94f3dcc973a7c92a9f7}{prop\+Update}} (Id, Property, Name)=0
+\begin{DoxyCompactList}\small\item\em prop\+Update function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a81027e83e2cbebe3464dac7e1fcf5165}{prop\+Push}} (\+::\mbox{\hyperlink{classProp}{Prop}})=0
+\begin{DoxyCompactList}\small\item\em prop\+Push function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a2d85d593fc2c540705ce3d8d17bfa57f}{prop\+Push\+\_\+front}} (\+::\mbox{\hyperlink{classProp}{Prop}})=0
+\begin{DoxyCompactList}\small\item\em prop\+Push\+\_\+front function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a6137dd46c1dbb25396f5e34da059fa40}{prop\+Remove}} (Id)=0
+\begin{DoxyCompactList}\small\item\em prop\+Remove function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a576cb771a74660aec8d14d6f6b6f77ba}{prop\+Pop}} ()=0
+\begin{DoxyCompactList}\small\item\em prop\+Pop function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_ab8fe99e9881ab0f2c32ec06d2ad61d2a}{prop\+Pop\+\_\+front}} ()=0
+\begin{DoxyCompactList}\small\item\em prop\+Pop\+\_\+front function \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIGameModule_a2ae2f179169165665acaf2fb409b5cac}{prop\+Clear\+All}} ()=0
+\begin{DoxyCompactList}\small\item\em prop\+Clear\+All function \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classIGameModule_abbb5e75624726f224dfe09fe502d2734}{get\+Score}} () const =0
+\begin{DoxyCompactList}\small\item\em get\+Score function \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIGameModule_af328a9c12674e69c05ef585058a5b5b0}{set\+Score}} (int score)=0
+\begin{DoxyCompactList}\small\item\em set\+Score function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIGameModule_a7b758de827b607986e3c46cbae15908b}\label{classIGameModule_a7b758de827b607986e3c46cbae15908b}} 
+\index{IGameModule@{IGameModule}!entityClearAll@{entityClearAll}}
+\index{entityClearAll@{entityClearAll}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityClearAll()}{entityClearAll()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Clear\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Clear\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a8b201e35a74359a6673198d4c7aa80b6}{Snake}}, \mbox{\hyperlink{classPacman_abbd245f752b500b3ffecc2f60f567670}{Pacman}}, and \mbox{\hyperlink{classAGame_adf79a4f7841c14f20f165e4ec9d4b791}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a90a5a6ad841e6b5e8dede712b7b3ee01}\label{classIGameModule_a90a5a6ad841e6b5e8dede712b7b3ee01}} 
+\index{IGameModule@{IGameModule}!entityGet@{entityGet}}
+\index{entityGet@{entityGet}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityGet()}{entityGet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{classEntity}{Entity}}$\ast$ IGame\+Module\+::entity\+Get (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Get function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_aaaa64181ccc4bf40dd35b7e2a6b282af}{Snake}}, \mbox{\hyperlink{classPacman_a9a958bb8739c896abe5f1b6040373c9a}{Pacman}}, and \mbox{\hyperlink{classAGame_a68cd0244c1e94841ddab8a6bc60c25d8}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a500ab40dacf562d0d472dcb81bdf92d9}\label{classIGameModule_a500ab40dacf562d0d472dcb81bdf92d9}} 
+\index{IGameModule@{IGameModule}!entityGet@{entityGet}}
+\index{entityGet@{entityGet}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityGet()}{entityGet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{classEntity}{Entity}}$\ast$ IGame\+Module\+::entity\+Get (\begin{DoxyParamCaption}\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Get function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_acbc85814b2768fd43c0980cd210fdca4}{Snake}}, \mbox{\hyperlink{classPacman_a990b18eebeb81608ed329435bc96a968}{Pacman}}, and \mbox{\hyperlink{classAGame_a2caa3aea2fb5149d51dc25049de3dbfb}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a0e4b1642bb77ffd8f4a45c12d74db44b}\label{classIGameModule_a0e4b1642bb77ffd8f4a45c12d74db44b}} 
+\index{IGameModule@{IGameModule}!entityGetAll@{entityGetAll}}
+\index{entityGetAll@{entityGetAll}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityGetAll()}{entityGetAll()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{classEntity}{Entity}} $\ast$$>$ IGame\+Module\+::entity\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Get\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a60a6864db02da58d151724015ba32c8f}{Snake}}, \mbox{\hyperlink{classPacman_a0f05c69f2d4af8bcebc443df9ad230a9}{Pacman}}, and \mbox{\hyperlink{classAGame_a26f7c0b2b6a119e8cd269c8681287935}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a54717736510474b0f5833dc2a7a9cca6}\label{classIGameModule_a54717736510474b0f5833dc2a7a9cca6}} 
+\index{IGameModule@{IGameModule}!entityGetAllOfType@{entityGetAllOfType}}
+\index{entityGetAllOfType@{entityGetAllOfType}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityGetAllOfType()}{entityGetAllOfType()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\+::\mbox{\hyperlink{classEntity}{Entity}}$\ast$$>$ IGame\+Module\+::entity\+Get\+All\+Of\+Type (\begin{DoxyParamCaption}\item[{Entity\+Type}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Get\+All\+Of\+Type function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Entity\+Type} & type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_aa36d04a2d93cdac83b41498870e66a97}{Snake}}, \mbox{\hyperlink{classPacman_a78ba48cc5dccb6ad9bd6160ff49a1b43}{Pacman}}, and \mbox{\hyperlink{classAGame_a575fc0319f21d60890ee8ea2a84de653}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a55b75e16eb1e043416a6a796a2f09d81}\label{classIGameModule_a55b75e16eb1e043416a6a796a2f09d81}} 
+\index{IGameModule@{IGameModule}!entityGetId@{entityGetId}}
+\index{entityGetId@{entityGetId}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityGetId()}{entityGetId()}}
+{\footnotesize\ttfamily virtual Id IGame\+Module\+::entity\+Get\+Id (\begin{DoxyParamCaption}\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entityget\+Id function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Id id 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a1fb753a89c9b670efac54c1bd0a8cbdd}{Snake}}, \mbox{\hyperlink{classPacman_a3b7ec53bb8ac64041e40042d6a767b53}{Pacman}}, and \mbox{\hyperlink{classAGame_a8eb128788b1ff5f5349246e8c086f38d}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a6b1be7f24224de8b79786a954ab3db27}\label{classIGameModule_a6b1be7f24224de8b79786a954ab3db27}} 
+\index{IGameModule@{IGameModule}!entityGetName@{entityGetName}}
+\index{entityGetName@{entityGetName}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityGetName()}{entityGetName()}}
+{\footnotesize\ttfamily virtual Name IGame\+Module\+::entity\+Get\+Name (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Get\+Name function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Name name 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a5cadd2ec37aa2851890e2bd8d76a48a2}{Snake}}, \mbox{\hyperlink{classPacman_a4dee7f2b0b3a7b251f8dc06bb9196a14}{Pacman}}, and \mbox{\hyperlink{classAGame_a424c532d2cbf598a7a0d4f2ef42f264c}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a3f74a05c2cb6829fe18719cbfbaa5fef}\label{classIGameModule_a3f74a05c2cb6829fe18719cbfbaa5fef}} 
+\index{IGameModule@{IGameModule}!entityGetProperty@{entityGetProperty}}
+\index{entityGetProperty@{entityGetProperty}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityGetProperty()}{entityGetProperty()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$float$>$ IGame\+Module\+::entity\+Get\+Property (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Get\+Property function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_aabad274968f470e1c5092f63c00de964}{Snake}}, \mbox{\hyperlink{classPacman_ad1bd80b41e9ff81a76e9e9982d084248}{Pacman}}, and \mbox{\hyperlink{classAGame_a88e56e96b57634cecd98c71131f3dede}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a24f805607d570bc214871a44667f4315}\label{classIGameModule_a24f805607d570bc214871a44667f4315}} 
+\index{IGameModule@{IGameModule}!entityPop@{entityPop}}
+\index{entityPop@{entityPop}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityPop()}{entityPop()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Remove function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_ad260e790bf4a629bbe753a271f0c1e29}{Snake}}, \mbox{\hyperlink{classPacman_a472c34ef2c22bcf1e74ef9fecfaab8c0}{Pacman}}, and \mbox{\hyperlink{classAGame_acee974cdb727b36265a4be69a8e569eb}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ab35d24283285b43194447898f15ab2bf}\label{classIGameModule_ab35d24283285b43194447898f15ab2bf}} 
+\index{IGameModule@{IGameModule}!entityPop\_front@{entityPop\_front}}
+\index{entityPop\_front@{entityPop\_front}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityPop\_front()}{entityPop\_front()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Pop\+\_\+front function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_aa09ca9def75ade4b2de4b55d00d598ba}{Snake}}, \mbox{\hyperlink{classPacman_ac29fa09c480d7811003341a2d05f55c1}{Pacman}}, and \mbox{\hyperlink{classAGame_a630ad14a6114b10b282d92f76b7fb34b}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ab3bb433f50ef32159cce789bbdcd1974}\label{classIGameModule_ab3bb433f50ef32159cce789bbdcd1974}} 
+\index{IGameModule@{IGameModule}!entityPush@{entityPush}}
+\index{entityPush@{entityPush}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityPush()}{entityPush()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Push (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{classEntity}{Entity}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Push function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classEntity}{Entity}}} & entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGameModule_ae409bde94afd5b796473331eadc77d98}\label{classIGameModule_ae409bde94afd5b796473331eadc77d98}} 
+\index{IGameModule@{IGameModule}!entityPush\_front@{entityPush\_front}}
+\index{entityPush\_front@{entityPush\_front}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityPush\_front()}{entityPush\_front()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Push\+\_\+front (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{classEntity}{Entity}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Push\+\_\+front function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classEntity}{Entity}}} & entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGameModule_a232651f839fdd17c546a4ba9f181e5d5}\label{classIGameModule_a232651f839fdd17c546a4ba9f181e5d5}} 
+\index{IGameModule@{IGameModule}!entityRemove@{entityRemove}}
+\index{entityRemove@{entityRemove}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityRemove()}{entityRemove()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Remove (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Remove function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a253f7d746ee0bd637aac69119231a3b9}{Snake}}, \mbox{\hyperlink{classPacman_a6074d6d428adb66a6dc30ecd38add63b}{Pacman}}, and \mbox{\hyperlink{classAGame_a9fb0afd38c91a157bd4ae8d7be9f8144}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a01e652564d5c66feefc0bf4adf65e915}\label{classIGameModule_a01e652564d5c66feefc0bf4adf65e915}} 
+\index{IGameModule@{IGameModule}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em float} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a13b29bca55d683dacee4356705bda3b7}{Snake}}, \mbox{\hyperlink{classPacman_a6f19b995691def33afc4b019dcbadb04}{Pacman}}, and \mbox{\hyperlink{classAGame_ae8b97976e08de50b0ee92cb0355d58ac}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a2de9b46c6a63ebca45f1908c26575beb}\label{classIGameModule_a2de9b46c6a63ebca45f1908c26575beb}} 
+\index{IGameModule@{IGameModule}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em int} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a9b4b3275caba4c3e5fed586e4cdc90b1}{Snake}}, \mbox{\hyperlink{classPacman_ae03397c93b550de56b20e6d2aa684653}{Pacman}}, and \mbox{\hyperlink{classAGame_ad294a0b0f9d5c6c928f8fa88ac99d433}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ad1c9752bcf0e58087a6b5d4b80f5b3eb}\label{classIGameModule_ad1c9752bcf0e58087a6b5d4b80f5b3eb}} 
+\index{IGameModule@{IGameModule}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a622fce8990c371d65b10b5dcaa321c6a}{Snake}}, \mbox{\hyperlink{classPacman_a33ea6843fff056b1eb12e1708762f950}{Pacman}}, and \mbox{\hyperlink{classAGame_ac795456763b6e6927e9dff8b48809953}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a947302397ac05c574839a5d65fe8f5a4}\label{classIGameModule_a947302397ac05c574839a5d65fe8f5a4}} 
+\index{IGameModule@{IGameModule}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{std\+::vector$<$ float $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em std\+::vector$<$float$>$} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a825594295fe8f2eef5bdb1f7ec2c7286}{Snake}}, \mbox{\hyperlink{classPacman_a2245b19b207dd2d123c3a1c51173f5e1}{Pacman}}, and \mbox{\hyperlink{classAGame_a42a94e8a44423f10065f8be03a6270af}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ab8b838670eeb506740525ef3a226c817}\label{classIGameModule_ab8b838670eeb506740525ef3a226c817}} 
+\index{IGameModule@{IGameModule}!entityUpdate@{entityUpdate}}
+\index{entityUpdate@{entityUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{entityUpdate()}{entityUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::entity\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+entity\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em std\+::vector$<$int$>$} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a85ec69ccddf9d922c3c0b323afe96d05}{Snake}}, \mbox{\hyperlink{classPacman_a8ea8ba6b707fc18c5edfadde4be9e502}{Pacman}}, and \mbox{\hyperlink{classAGame_af63189384c4dc033fe9072e40ec31c55}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_abbb5e75624726f224dfe09fe502d2734}\label{classIGameModule_abbb5e75624726f224dfe09fe502d2734}} 
+\index{IGameModule@{IGameModule}!getScore@{getScore}}
+\index{getScore@{getScore}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily virtual int IGame\+Module\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+get\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a241ef3db2d6f7b3459b7dc58043ff17d}{Snake}}, \mbox{\hyperlink{classPacman_aec141a3bf2b0f3bf7684b4eebfb97b4d}{Pacman}}, \mbox{\hyperlink{classAGame_ad97633ec7a2c24a7e67d31f27ca47958}{AGame}}, and \mbox{\hyperlink{classMenu_a6bff46a4d45abb54f52b85b13f9dee51}{Menu}}.
+
+\mbox{\Hypertarget{classIGameModule_a2ae2f179169165665acaf2fb409b5cac}\label{classIGameModule_a2ae2f179169165665acaf2fb409b5cac}} 
+\index{IGameModule@{IGameModule}!propClearAll@{propClearAll}}
+\index{propClearAll@{propClearAll}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propClearAll()}{propClearAll()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Clear\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Clear\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_a9b4e2d285cf3e814091dc21827445ec6}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a5694d3c1754e93f69aff646670212346}\label{classIGameModule_a5694d3c1754e93f69aff646670212346}} 
+\index{IGameModule@{IGameModule}!propGet@{propGet}}
+\index{propGet@{propGet}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propGet()}{propGet()}}
+{\footnotesize\ttfamily virtual \+::\mbox{\hyperlink{classProp}{Prop}} IGame\+Module\+::prop\+Get (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Get function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classProp}{Prop}} $\ast$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_aa11deaf832afcf9e46b6ebdfcfc4c37c}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ac22d4e511d53749225fe63aaf7983de5}\label{classIGameModule_ac22d4e511d53749225fe63aaf7983de5}} 
+\index{IGameModule@{IGameModule}!propGetAll@{propGetAll}}
+\index{propGetAll@{propGetAll}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propGetAll()}{propGetAll()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\+::\mbox{\hyperlink{classProp}{Prop}} $\ast$$>$ IGame\+Module\+::prop\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Get\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Prop $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a2aabcbb91134ad0cae6dae50b144f520}{Snake}}, \mbox{\hyperlink{classPacman_abbb4603e2b33cc7f8f728edb17fb8a34}{Pacman}}, and \mbox{\hyperlink{classAGame_a45b0da6860944b50da4f779c3a4b026f}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a60bc409129d2cdab367756dc4949a9a3}\label{classIGameModule_a60bc409129d2cdab367756dc4949a9a3}} 
+\index{IGameModule@{IGameModule}!propGetAllOfType@{propGetAllOfType}}
+\index{propGetAllOfType@{propGetAllOfType}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propGetAllOfType()}{propGetAllOfType()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\+::\mbox{\hyperlink{classProp}{Prop}} $\ast$$>$ IGame\+Module\+::prop\+Get\+All\+Of\+Type (\begin{DoxyParamCaption}\item[{Prop\+Type}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Get\+All\+Of\+Type function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Prop\+Type} & type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Prop $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a6c8d022148079fb4f75f54a34d9d77fc}{Snake}}, \mbox{\hyperlink{classPacman_a9f1997c8e57a5aa37735515944eed672}{Pacman}}, and \mbox{\hyperlink{classAGame_a65ce205ce74ef27c36715e312d342ab8}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a5b0df9bcf4ea68b6cd4ebe9de2053558}\label{classIGameModule_a5b0df9bcf4ea68b6cd4ebe9de2053558}} 
+\index{IGameModule@{IGameModule}!propGetProperty@{propGetProperty}}
+\index{propGetProperty@{propGetProperty}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propGetProperty()}{propGetProperty()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$float$>$ IGame\+Module\+::prop\+Get\+Property (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Get\+Property function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_a20cd152cad359189752741dca50323ac}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a576cb771a74660aec8d14d6f6b6f77ba}\label{classIGameModule_a576cb771a74660aec8d14d6f6b6f77ba}} 
+\index{IGameModule@{IGameModule}!propPop@{propPop}}
+\index{propPop@{propPop}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propPop()}{propPop()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Pop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_a1097e9612833429ad23727ddab0569e4}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ab8fe99e9881ab0f2c32ec06d2ad61d2a}\label{classIGameModule_ab8fe99e9881ab0f2c32ec06d2ad61d2a}} 
+\index{IGameModule@{IGameModule}!propPop\_front@{propPop\_front}}
+\index{propPop\_front@{propPop\_front}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propPop\_front()}{propPop\_front()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Pop\+\_\+front function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_a43f8de937410ec7fd669acfd23168bd0}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a81027e83e2cbebe3464dac7e1fcf5165}\label{classIGameModule_a81027e83e2cbebe3464dac7e1fcf5165}} 
+\index{IGameModule@{IGameModule}!propPush@{propPush}}
+\index{propPush@{propPush}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propPush()}{propPush()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Push (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{classProp}{Prop}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Push function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classProp}{Prop}}} & prop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGameModule_a2d85d593fc2c540705ce3d8d17bfa57f}\label{classIGameModule_a2d85d593fc2c540705ce3d8d17bfa57f}} 
+\index{IGameModule@{IGameModule}!propPush\_front@{propPush\_front}}
+\index{propPush\_front@{propPush\_front}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propPush\_front()}{propPush\_front()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Push\+\_\+front (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{classProp}{Prop}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Push\+\_\+front function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classProp}{Prop}}} & prop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIGameModule_a6137dd46c1dbb25396f5e34da059fa40}\label{classIGameModule_a6137dd46c1dbb25396f5e34da059fa40}} 
+\index{IGameModule@{IGameModule}!propRemove@{propRemove}}
+\index{propRemove@{propRemove}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propRemove()}{propRemove()}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Remove (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Remove function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_aecfa02edeee4ffb06914910f30ea89c9}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a4a6e085f8d7e6e5227aaaea01e62f3fd}\label{classIGameModule_a4a6e085f8d7e6e5227aaaea01e62f3fd}} 
+\index{IGameModule@{IGameModule}!propUpdate@{propUpdate}}
+\index{propUpdate@{propUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propUpdate()}{propUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{float}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em float} & value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classAGame_ac80b473fe737f2f5c2c2d5d2e5530505}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ae91291bd0f309031a65942a398d7cda1}\label{classIGameModule_ae91291bd0f309031a65942a398d7cda1}} 
+\index{IGameModule@{IGameModule}!propUpdate@{propUpdate}}
+\index{propUpdate@{propUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propUpdate()}{propUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em int} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_a340235db8f8a28f6214ff5fb2a29a61c}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a8ecc2328cba4e94f3dcc973a7c92a9f7}\label{classIGameModule_a8ecc2328cba4e94f3dcc973a7c92a9f7}} 
+\index{IGameModule@{IGameModule}!propUpdate@{propUpdate}}
+\index{propUpdate@{propUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propUpdate()}{propUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{Name}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em Name} & name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_ac68e6b0ecf0c9738144476e28776b3c8}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a3503fe091c6abe5a16d0121872546aaa}\label{classIGameModule_a3503fe091c6abe5a16d0121872546aaa}} 
+\index{IGameModule@{IGameModule}!propUpdate@{propUpdate}}
+\index{propUpdate@{propUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propUpdate()}{propUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{std\+::vector$<$ float $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em std\+::vector$<$float$>$} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_a128f97654f87e110f7bffb7cde575e8f}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_af4acb62f78533c0974070a0f0ec801a8}\label{classIGameModule_af4acb62f78533c0974070a0f0ec801a8}} 
+\index{IGameModule@{IGameModule}!propUpdate@{propUpdate}}
+\index{propUpdate@{propUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{propUpdate()}{propUpdate()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily virtual bool IGame\+Module\+::prop\+Update (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{Property}]{,  }\item[{std\+::vector$<$ int $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+prop\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em Property} & property \\
+\hline
+{\em std\+::vector$<$int$>$} & value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAGame_aaaf636bb13c2149d3325bf486890e0f1}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_af328a9c12674e69c05ef585058a5b5b0}\label{classIGameModule_af328a9c12674e69c05ef585058a5b5b0}} 
+\index{IGameModule@{IGameModule}!setScore@{setScore}}
+\index{setScore@{setScore}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily virtual void IGame\+Module\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+set\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & score \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_afd711041938205260bf89e956f4ca086}{Snake}}, \mbox{\hyperlink{classPacman_aa98a2cefdd6d4e77cf89c878f9fb2f2a}{Pacman}}, and \mbox{\hyperlink{classAGame_ab1a197839244f6e8447154bacf5edc7c}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ae1d2b6834e134d4fd90e0d51f5656604}\label{classIGameModule_ae1d2b6834e134d4fd90e0d51f5656604}} 
+\index{IGameModule@{IGameModule}!systemClear@{systemClear}}
+\index{systemClear@{systemClear}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemClear()}{systemClear()}}
+{\footnotesize\ttfamily virtual State IGame\+Module\+::system\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Clear function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a8d27072a1b1d81b6603eb1f7d9739e75}{Snake}}, \mbox{\hyperlink{classPacman_aac4bb0e666865710c0a6c2c3624227fd}{Pacman}}, and \mbox{\hyperlink{classAGame_aba126ca8718741918d10d66bad29a3d9}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a563d50c8bdb18a0646a987e1de688154}\label{classIGameModule_a563d50c8bdb18a0646a987e1de688154}} 
+\index{IGameModule@{IGameModule}!systemDebug@{systemDebug}}
+\index{systemDebug@{systemDebug}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemDebug()}{systemDebug()}}
+{\footnotesize\ttfamily virtual void IGame\+Module\+::system\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Debug function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_ab333d074ed36c11fb52b090a1db19faf}{Snake}}, \mbox{\hyperlink{classPacman_ab64ee59cd76258dce3a0e6ba230c7556}{Pacman}}, and \mbox{\hyperlink{classAGame_a6d11d5c0af6f1ef90d14f94385cfa0b0}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a238d3509ea530f92c3b914ed0592bf9c}\label{classIGameModule_a238d3509ea530f92c3b914ed0592bf9c}} 
+\index{IGameModule@{IGameModule}!systemGetState@{systemGetState}}
+\index{systemGetState@{systemGetState}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemGetState()}{systemGetState()}}
+{\footnotesize\ttfamily virtual State IGame\+Module\+::system\+Get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Get\+State function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a46109f1ba60e466b0689ead8420c0ff4}{Snake}}, \mbox{\hyperlink{classPacman_abc5b703d232148c5b437fb4741653d59}{Pacman}}, and \mbox{\hyperlink{classAGame_ad85ae1e85576a8622db9064c53025a76}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_ad1ee09490c847eddbbf4f6ee6d100051}\label{classIGameModule_ad1ee09490c847eddbbf4f6ee6d100051}} 
+\index{IGameModule@{IGameModule}!systemInit@{systemInit}}
+\index{systemInit@{systemInit}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemInit()}{systemInit()}}
+{\footnotesize\ttfamily virtual State IGame\+Module\+::system\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Init function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a24ddf54c6e42c0cc427acae27e52cede}{Snake}}, \mbox{\hyperlink{classPacman_a90df9f4f7e50e8542310242004366646}{Pacman}}, \mbox{\hyperlink{classAGame_a2702c98b4c96a13d7b5582ce93eb6db9}{AGame}}, and \mbox{\hyperlink{classMenu_af339e3a66f54bb6d4ec42021460fae05}{Menu}}.
+
+\mbox{\Hypertarget{classIGameModule_ad4a30d1cee37bb2b703872e51f49a34e}\label{classIGameModule_ad4a30d1cee37bb2b703872e51f49a34e}} 
+\index{IGameModule@{IGameModule}!systemOnUserInput@{systemOnUserInput}}
+\index{systemOnUserInput@{systemOnUserInput}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemOnUserInput()}{systemOnUserInput()}}
+{\footnotesize\ttfamily virtual void IGame\+Module\+::system\+On\+User\+Input (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+On\+User\+Input function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_ab17afd884b638aa2786ee2b8465a8e6d}{Snake}}, \mbox{\hyperlink{classPacman_a90084eb6f8ee19261708afe451fa7aed}{Pacman}}, \mbox{\hyperlink{classAGame_a5f334bbe9bda6d8d11a861cae92a9ef5}{AGame}}, and \mbox{\hyperlink{classMenu_a686032b32fa3c88005e9a09d334df593}{Menu}}.
+
+\mbox{\Hypertarget{classIGameModule_aa6e72a18e3d33a0108c9749271d57521}\label{classIGameModule_aa6e72a18e3d33a0108c9749271d57521}} 
+\index{IGameModule@{IGameModule}!systemSetState@{systemSetState}}
+\index{systemSetState@{systemSetState}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemSetState()}{systemSetState()}}
+{\footnotesize\ttfamily virtual void IGame\+Module\+::system\+Set\+State (\begin{DoxyParamCaption}\item[{State}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Set\+State function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em State} & state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_aaecd535fbb6a05f378618f3196c15762}{Snake}}, \mbox{\hyperlink{classPacman_a541121b5f0548d6d80d62ada82b0d89b}{Pacman}}, and \mbox{\hyperlink{classAGame_a88416f940d6e6b1dc41a0aaa24b8644f}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a2e46b970c93dbe542a3d848e7559fa9e}\label{classIGameModule_a2e46b970c93dbe542a3d848e7559fa9e}} 
+\index{IGameModule@{IGameModule}!systemStart@{systemStart}}
+\index{systemStart@{systemStart}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemStart()}{systemStart()}}
+{\footnotesize\ttfamily virtual State IGame\+Module\+::system\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Start function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a1c16d90a0dac982619b05b0b409bb7c7}{Snake}}, \mbox{\hyperlink{classPacman_a581636348504199550389c1e6222abe7}{Pacman}}, and \mbox{\hyperlink{classAGame_afe5fec581fba72e8669353b22db5917d}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_aca562a0b54e96e21096fe7ce88091c6c}\label{classIGameModule_aca562a0b54e96e21096fe7ce88091c6c}} 
+\index{IGameModule@{IGameModule}!systemStop@{systemStop}}
+\index{systemStop@{systemStop}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemStop()}{systemStop()}}
+{\footnotesize\ttfamily virtual State IGame\+Module\+::system\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Stop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_af3b1ca6fe1d0e03641c6ba7b42c4425c}{Snake}}, \mbox{\hyperlink{classPacman_aa732fb2ed89c7021bb0c2284f4ed4d70}{Pacman}}, \mbox{\hyperlink{classAGame_a2577531c3bd27c5b7b152bac07ac3b2d}{AGame}}, and \mbox{\hyperlink{classMenu_a83eb5031e00697bfb6ddc591afb08501}{Menu}}.
+
+\mbox{\Hypertarget{classIGameModule_a0d8ff7eab66349fe41901dad4809e95c}\label{classIGameModule_a0d8ff7eab66349fe41901dad4809e95c}} 
+\index{IGameModule@{IGameModule}!systemUpdate@{systemUpdate}}
+\index{systemUpdate@{systemUpdate}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{systemUpdate()}{systemUpdate()}}
+{\footnotesize\ttfamily virtual State IGame\+Module\+::system\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+system\+Update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a4fce0b11e740706c10943a2e7b24f028}{Snake}}, \mbox{\hyperlink{classPacman_a8881e446ceb8797f9c8b17cd364db011}{Pacman}}, and \mbox{\hyperlink{classAGame_a86198adaf9adffc79fa110563d6157f5}{AGame}}.
+
+\mbox{\Hypertarget{classIGameModule_a443b10245f93b5a7076376c9416c993f}\label{classIGameModule_a443b10245f93b5a7076376c9416c993f}} 
+\index{IGameModule@{IGameModule}!textGetAll@{textGetAll}}
+\index{textGetAll@{textGetAll}!IGameModule@{IGameModule}}
+\doxysubsubsection{\texorpdfstring{textGetAll()}{textGetAll()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\+::\mbox{\hyperlink{classText}{Text}} $\ast$$>$ IGame\+Module\+::text\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+text\+Get\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Text $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSnake_a889f21bff060f869fe00a8290e8cdb69}{Snake}}, \mbox{\hyperlink{classPacman_a3f07a217d5bc0bbd53e2cdf2d874df73}{Pacman}}, \mbox{\hyperlink{classAGame_a44629405897405766b4a835f88b8a83a}{AGame}}, and \mbox{\hyperlink{classMenu_af21186adc0f58a0ec5980138923334a4}{Menu}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/games/IGame\+Module.\+hpp\end{DoxyCompactItemize}

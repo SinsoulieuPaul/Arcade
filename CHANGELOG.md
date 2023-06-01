@@ -1,0 +1,92 @@
+## Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog],
+and this project adheres to [Semantic Versioning].
+
+## [Unreleased]- [2023-03-09] 1: [+] some doc file and games folder version: 0.0.1
+- [2023-03-13] 1: + new interface version
+- [2023-03-13] 1: [+] start of Game Module System functions
+- [2023-03-13] 1: [+-] end of system function, and getUserInput, removed from IGameModule
+- [2023-03-14] 1: [+] Entity class and functions in Abstract Class
+- [2023-03-14] 1: [+] Entity clas
+- [2023-03-14] 1: [+] Entity empty constructor
+- [2023-03-14] 1: [~] correct functions for compilation
+- [2023-03-14] 1: [~] Correct makefile
+- [2023-03-15] 1: [+][~] New core folder with Core class, and main function, modified Proptype Enum, to not typedef
+- [2023-03-15] 1: [-] .vscode
+- [2023-03-16] 1: [+] start of core
+- [2023-03-16] 1: [+] core rule for makefile
+- [2023-03-16] 1: [+] start of loading the libs
+- [2023-03-16] 1: Merge remote-tracking branch 'refs/remotes/origin/main'
+- [2023-03-16] 1.0.1: [+] Exception class for Core version 1.0.1
+- [2023-03-18] 1: [~][-] IGameModule Interface changed, to not have subclasses, removed errors done by all this changes.
+- [2023-03-19] 1: [+] system function for agame
+- [2023-03-19] 1: [+] some functions of entity in AGame class
+- [2023-03-19] 1: [+] clear and pop functions for entity list
+- [2023-03-19] 1: [+] props function in AGame
+- [2023-03-20] 1: [+] Core is compiling
+- [2023-03-20] 1: [+] display the libs available
+- [2023-03-20] 1: [+] display available libs, and author name
+- [2023-03-20] 1: [~] removed comments in the makefile, to make lib graphical ncurses
+- [2023-03-20] 1: [-] removed comment in the fclean rule of the main makefile
+- [2023-03-21] 1: [+] add functions for IDispModule
+- [2023-03-21] 1: Merge remote-tracking branch 'refs/remotes/origin/main'
+- [2023-03-21] 1: [+] good implementation
+- [2023-03-21] 1: [+] Prop functionnal class
+- [2023-03-21] 1: [+] Text Class
+- [2023-03-22] 1: [+] appel correct des fonctions
+- [2023-03-23] 1: [+] take args to launch ./arcade
+- [2023-03-24] 1: [+] add the good list of graphics libs
+- [2023-03-24] 1: [+] start of the menu
+- [2023-03-27] 1: [+] list the available libs
+- [2023-03-27] 1: [+] click Action void *
+- [2023-03-27] 1: [+] hello
+- [2023-03-27] 1: Merge remote-tracking branch 'refs/remotes/origin/main'
+- [2023-03-27] 1: [+] no more segfault
+- [2023-03-27] 1: [+] lib ncurses draw text
+- [2023-03-28] 1: [+] update function for ncurses, if not i cant launch it
+- [2023-03-28] 1: [+] doxygen generator
+- [2023-03-28] 1: [+] la libncurses compile
+- [2023-03-28] 1: [+] setSpriteChar
+- [2023-03-29] 1: [+] good changelog
+- [2023-03-29] 1: [+] good comments syntax
+- [2023-03-30] 1: [~] SDL:  Modify the try catch
+- [2023-03-30] 1: [~] SDL: Modify the try catch
+- [2023-03-30] 1: [+] setUserInput function
+- [2023-03-30] 1: [~] IDispModule, SFML & SDL: Comments for documentation
+- [2023-03-31] 1: [~] SDL: Snake can now move
+- [2023-03-31] 1: [+] SFML & Text: Add a score, Texts can now be drawn
+- [2023-03-31] 1: [~] Doc: Text and Prop
+- [2023-03-31] 1: [+] NO MORE SEGFAULT
+- [2023-03-31] 1: [+] start of rotation, not perfect for now
+- [2023-03-31] 1: [~] more natural rotation
+- [2023-04-01] 1: [+] start to display the apple, at some random locations
+- [2023-04-03] 1: [+][~] Snake: resize images ; Snake: Score and background ; Core & Graphical libs: Score
+- [2023-04-03] 1: [~] Snake: New positions and change assets
+- [2023-04-04] 1: [+] SDL: Draw and Add for Texts ; Core: Score is not lost anymore
+- [2023-04-04] 1: [~] Snake: One apple at the beggining, changed its position
+- [2023-04-04] 1: [~] Snake: Fix double apple bug & better random algorithm
+- [2023-04-04] 1: [+] Pacman: files ; SFML: try catch
+- [2023-04-04] 1: [+][~] Keys: Handles Escape and Enter ; SDL: Fix a crash
+- [2023-04-04] 1: [+] Doc: All functions are now commented
+- [2023-04-04] 1: [+] start deplacement + colision et retour au menu
+- [2023-04-05] 1: [+] starting of good direction key and collions
+- [2023-04-05] 1: [~] General: Score is now written in a txt
+- [2023-04-05] 1: [~] Doc: writeScore()
+- [2023-04-05] 1: [+] Pacman: New assets
+- [2023-04-05] 1: [+] border wall for pacman
+- [2023-04-05] 1: [+] start deplacement du snake
+- [2023-04-05] 1: [+] pouet
+- [2023-04-05] 1: [+] dlclose
+- [2023-04-05] 1: [+] start deplacement du snake
+- [2023-04-05] 1: [+] Graphical: clearEntity and getEntities
+- [2023-04-05] 1: [~] SDL2: Fix crash in initRender()
+- [2023-04-05] 1: [-] Debug messages
+- [2023-04-05] 1: [+] doc pdf
+- [2023-05-12] 1: [+] HighScore
+- [2023-05-15] 1: [+] Beggining for button (Mouse handling)
+- [2023-05-15] 1: [+] The button is now in every game
+- [2023-05-15] 1: [+] The button is now working in sfml.
+- [2023-05-15] 1: [+] The button is now working in SDL2.

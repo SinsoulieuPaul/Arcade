@@ -1,0 +1,58 @@
+\hypertarget{Core_8hpp_source}{}\doxysection{Core.\+hpp}
+\label{Core_8hpp_source}\index{src/core/Core.hpp@{src/core/Core.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Core}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef CORE\_HPP\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define CORE\_HPP\_}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../lib/games/AGame.hpp"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../lib/graphical/IDisplayModule.hpp"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <exception>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <dlfcn.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <filesystem>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include "{}../lib/games/Text.hpp"{}}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include "{}../lib/games/Entity.hpp"{}}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include "{}../lib/games/Prop.hpp"{}}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classCore}{Core}} \{}
+\DoxyCodeLine{24     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{classCore}{Core}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{char} **);}
+\DoxyCodeLine{26         \mbox{\hyperlink{classCore}{\string~Core}}();}
+\DoxyCodeLine{27         \textcolor{keyword}{class }\mbox{\hyperlink{classCore_1_1CoreException}{CoreException}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{28             \textcolor{keyword}{public}:}
+\DoxyCodeLine{29                 \mbox{\hyperlink{classCore_1_1CoreException}{CoreException}}(\textcolor{keyword}{const} std::string \&message) : \_message(message) \{\};}
+\DoxyCodeLine{30                 \textcolor{keyword}{const} \textcolor{keywordtype}{char} *what() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override} \{ \textcolor{keywordflow}{return} \_message.c\_str(); \};}
+\DoxyCodeLine{31             \textcolor{keyword}{protected}:}
+\DoxyCodeLine{32             \textcolor{keyword}{private}:}
+\DoxyCodeLine{33                 std::string \_message;}
+\DoxyCodeLine{34         \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{37     \textcolor{keyword}{private}:}
+\DoxyCodeLine{41         \textcolor{keywordtype}{void} \_loadLibs();}
+\DoxyCodeLine{42         \textcolor{keywordtype}{void} \_chooseLibs(std::string *);}
+\DoxyCodeLine{43         \textcolor{keywordtype}{void} \_createGameMenu();}
+\DoxyCodeLine{44         \textcolor{keywordtype}{void} \_createGame();}
+\DoxyCodeLine{45         std::string libPath = \textcolor{stringliteral}{"{}./lib/"{}};}
+\DoxyCodeLine{46         std::vector<std::string> \_gameLibs;}
+\DoxyCodeLine{47         std::vector<std::string> \_graphLibs;}
+\DoxyCodeLine{48         std::vector<std::string> \_gameFounds;}
+\DoxyCodeLine{49         std::shared\_ptr<IDispModule> (*\_createLib)();}
+\DoxyCodeLine{50         std::shared\_ptr<IDispModule> \_module;}
+\DoxyCodeLine{51         std::shared\_ptr<IGameModule> (*\_gameLib)();}
+\DoxyCodeLine{52         std::shared\_ptr<IGameModule> \_game;}
+\DoxyCodeLine{53 \};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !CORE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

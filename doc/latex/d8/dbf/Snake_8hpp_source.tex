@@ -1,0 +1,63 @@
+\hypertarget{Snake_8hpp_source}{}\doxysection{Snake.\+hpp}
+\label{Snake_8hpp_source}\index{src/lib/games/Snake/Snake.hpp@{src/lib/games/Snake/Snake.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Snake}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef SNAKE\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define SNAKE\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../AGame.hpp"{}}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classSnake}{Snake}} : \textcolor{keyword}{public} \mbox{\hyperlink{classAGame}{AGame}} \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \mbox{\hyperlink{classSnake}{Snake}}();}
+\DoxyCodeLine{16         \mbox{\hyperlink{classSnake}{\string~Snake}}();}
+\DoxyCodeLine{17         State \mbox{\hyperlink{classSnake_a24ddf54c6e42c0cc427acae27e52cede}{systemInit}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{18         State \mbox{\hyperlink{classSnake_a1c16d90a0dac982619b05b0b409bb7c7}{systemStart}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{19         State \mbox{\hyperlink{classSnake_af3b1ca6fe1d0e03641c6ba7b42c4425c}{systemStop}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{20         State \mbox{\hyperlink{classSnake_a8d27072a1b1d81b6603eb1f7d9739e75}{systemClear}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{21         State \mbox{\hyperlink{classSnake_a4fce0b11e740706c10943a2e7b24f028}{systemUpdate}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{22         State \mbox{\hyperlink{classSnake_a46109f1ba60e466b0689ead8420c0ff4}{systemGetState}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{23         \textcolor{keywordtype}{void} \mbox{\hyperlink{classSnake_aaecd535fbb6a05f378618f3196c15762}{systemSetState}}(State) \textcolor{keyword}{override};}
+\DoxyCodeLine{24         \textcolor{keywordtype}{void} \mbox{\hyperlink{classSnake_ab17afd884b638aa2786ee2b8465a8e6d}{systemOnUserInput}}(\textcolor{keywordtype}{int}) \textcolor{keyword}{override};}
+\DoxyCodeLine{25         \textcolor{keywordtype}{void} \mbox{\hyperlink{classSnake_ab333d074ed36c11fb52b090a1db19faf}{systemDebug}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{26         std::vector<Prop *> propGetAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{comment}{// Entity}}
+\DoxyCodeLine{29                 \textcolor{comment}{// Entity functions}}
+\DoxyCodeLine{30         std::vector<Entity> entityGetAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{31         \mbox{\hyperlink{classEntity}{Entity}} entityGet(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{32         \mbox{\hyperlink{classEntity}{Entity}} entityGet(Name) \textcolor{keyword}{override};}
+\DoxyCodeLine{33         std::vector<Entity> entityGetAllOfType(EntityType) \textcolor{keyword}{override};}
+\DoxyCodeLine{34         Id entityGetId(Name) \textcolor{keyword}{override};}
+\DoxyCodeLine{35         Name entityGetName(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{36         std::vector<float> entityGetProperty(Id, Property) \textcolor{keyword}{override};}
+\DoxyCodeLine{37         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, \textcolor{keywordtype}{int}) \textcolor{keyword}{override};}
+\DoxyCodeLine{38         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, \textcolor{keywordtype}{float}) \textcolor{keyword}{override};}
+\DoxyCodeLine{39         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, std::vector<float>) \textcolor{keyword}{override};}
+\DoxyCodeLine{40         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, std::vector<int>) \textcolor{keyword}{override};}
+\DoxyCodeLine{41         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, Name) \textcolor{keyword}{override};}
+\DoxyCodeLine{42         \textcolor{keywordtype}{bool} entityPush(\mbox{\hyperlink{classEntity}{Entity}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{43         \textcolor{keywordtype}{bool} entityPush\_front(\mbox{\hyperlink{classEntity}{Entity}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{44         \textcolor{keywordtype}{bool} entityRemove(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{45         \textcolor{keywordtype}{bool} entityPop() \textcolor{keyword}{override};}
+\DoxyCodeLine{46         \textcolor{keywordtype}{bool} entityPop\_front() \textcolor{keyword}{override};}
+\DoxyCodeLine{47         \textcolor{keywordtype}{bool} entityClearAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{50         State \_state;}
+\DoxyCodeLine{51     \textcolor{keyword}{private}:}
+\DoxyCodeLine{52         \textcolor{keywordtype}{void} \_initBackground();}
+\DoxyCodeLine{53         std::vector<Entity *> \_entities;}
+\DoxyCodeLine{54         std::vector<Prop *> \_props;}
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !SNAKE\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

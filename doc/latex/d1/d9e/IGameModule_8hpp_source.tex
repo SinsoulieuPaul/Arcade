@@ -1,0 +1,293 @@
+\hypertarget{IGameModule_8hpp_source}{}\doxysection{IGame\+Module.\+hpp}
+\label{IGameModule_8hpp_source}\index{src/lib/games/IGameModule.hpp@{src/lib/games/IGameModule.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** IGameModule}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <cstddef>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <memory>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{enum} Key \{}
+\DoxyCodeLine{17     Z,}
+\DoxyCodeLine{18     Q,}
+\DoxyCodeLine{19     S,}
+\DoxyCodeLine{20     D,}
+\DoxyCodeLine{21     R,}
+\DoxyCodeLine{22     L,}
+\DoxyCodeLine{23     G,}
+\DoxyCodeLine{24     None}
+\DoxyCodeLine{25 \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{enum} EntityType \{}
+\DoxyCodeLine{28     Player,}
+\DoxyCodeLine{29     Enemy,}
+\DoxyCodeLine{30     Mob,}
+\DoxyCodeLine{31 \};}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 \textcolor{keyword}{enum} PropType \{}
+\DoxyCodeLine{34     Wall,}
+\DoxyCodeLine{35     Door,}
+\DoxyCodeLine{36     Invisible,}
+\DoxyCodeLine{37     Object}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{enum} Property \{}
+\DoxyCodeLine{41     Velocity,}
+\DoxyCodeLine{42     Position,}
+\DoxyCodeLine{43     Health,}
+\DoxyCodeLine{44     Type,}
+\DoxyCodeLine{45 \};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{enum} State \{}
+\DoxyCodeLine{48     Paused,}
+\DoxyCodeLine{49     Init,}
+\DoxyCodeLine{50     Started,}
+\DoxyCodeLine{51     Stopped,}
+\DoxyCodeLine{52     Loading,}
+\DoxyCodeLine{53     Over,}
+\DoxyCodeLine{54     Won,}
+\DoxyCodeLine{55     Failed,}
+\DoxyCodeLine{56     Error,}
+\DoxyCodeLine{57     Cleared,}
+\DoxyCodeLine{58     Updated,}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{keyword}{typedef} std::size\_t Id;}
+\DoxyCodeLine{62 \textcolor{keyword}{typedef} std::string *Name;}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 \textcolor{keyword}{class }\mbox{\hyperlink{classEntity}{Entity}};}
+\DoxyCodeLine{65 \textcolor{keyword}{class }\mbox{\hyperlink{classProp}{Prop}};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67 \textcolor{keyword}{class }\mbox{\hyperlink{classIGameModule}{IGameModule}} \{}
+\DoxyCodeLine{68     \textcolor{keyword}{public}:}
+\DoxyCodeLine{69         \textcolor{comment}{// System functions}}
+\DoxyCodeLine{70         \textcolor{comment}{/* @brief Initialize the game}}
+\DoxyCodeLine{71 \textcolor{comment}{         * @return State}}
+\DoxyCodeLine{72 \textcolor{comment}{         */}}
+\DoxyCodeLine{73         \textcolor{keyword}{virtual} State systemInit() = 0;}
+\DoxyCodeLine{74         \textcolor{comment}{/* @brief Start the game}}
+\DoxyCodeLine{75 \textcolor{comment}{         * @return State}}
+\DoxyCodeLine{76 \textcolor{comment}{        */}}
+\DoxyCodeLine{77         \textcolor{keyword}{virtual} State systemStart() = 0;}
+\DoxyCodeLine{78         \textcolor{comment}{/* @brief Stop the game}}
+\DoxyCodeLine{79 \textcolor{comment}{         * @return State}}
+\DoxyCodeLine{80 \textcolor{comment}{        */}}
+\DoxyCodeLine{81         \textcolor{keyword}{virtual} State systemStop() = 0;}
+\DoxyCodeLine{82         \textcolor{comment}{/* @brief Clear the game}}
+\DoxyCodeLine{83 \textcolor{comment}{         * @return State}}
+\DoxyCodeLine{84 \textcolor{comment}{        */}}
+\DoxyCodeLine{85         \textcolor{keyword}{virtual} State systemClear() = 0;}
+\DoxyCodeLine{86         \textcolor{comment}{/* @brief Update the game}}
+\DoxyCodeLine{87 \textcolor{comment}{         * @return State}}
+\DoxyCodeLine{88 \textcolor{comment}{        */}}
+\DoxyCodeLine{89         \textcolor{keyword}{virtual} State systemUpdate() = 0;}
+\DoxyCodeLine{90         \textcolor{comment}{/* @brief Get the current state of the game}}
+\DoxyCodeLine{91 \textcolor{comment}{         * @return State}}
+\DoxyCodeLine{92 \textcolor{comment}{        */}}
+\DoxyCodeLine{93         \textcolor{keyword}{virtual} State systemGetState() \textcolor{keyword}{const} = 0;}
+\DoxyCodeLine{94         \textcolor{comment}{/* @brief Set the current state of the game}}
+\DoxyCodeLine{95 \textcolor{comment}{         * @param State}}
+\DoxyCodeLine{96 \textcolor{comment}{        */}}
+\DoxyCodeLine{97         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} systemSetState(State) = 0;}
+\DoxyCodeLine{98         \textcolor{comment}{/* @brief Do thing on User Input}}
+\DoxyCodeLine{99 \textcolor{comment}{        * @param int}}
+\DoxyCodeLine{100 \textcolor{comment}{        */}}
+\DoxyCodeLine{101         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} systemOnUserInput(\textcolor{keywordtype}{int}) = 0;}
+\DoxyCodeLine{102         \textcolor{comment}{/* @brief Debug function}}
+\DoxyCodeLine{103 \textcolor{comment}{        */}}
+\DoxyCodeLine{104         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} systemDebug() = 0;}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106         \textcolor{comment}{// Entity functions}}
+\DoxyCodeLine{107         \textcolor{comment}{/* @brief Get all entities}}
+\DoxyCodeLine{108 \textcolor{comment}{         * @return std::vector<Entity>}}
+\DoxyCodeLine{109 \textcolor{comment}{        */}}
+\DoxyCodeLine{110         \textcolor{keyword}{virtual} std::vector<Entity> entityGetAll() = 0;}
+\DoxyCodeLine{111         \textcolor{comment}{/* @brief Get an entity by Id}}
+\DoxyCodeLine{112 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{113 \textcolor{comment}{         * @return Entity}}
+\DoxyCodeLine{114 \textcolor{comment}{        */}}
+\DoxyCodeLine{115         virtual ::Entity entityGet(Id) = 0;}
+\DoxyCodeLine{116         \textcolor{comment}{/* @brief Get an entity by Name}}
+\DoxyCodeLine{117 \textcolor{comment}{         * @param Name}}
+\DoxyCodeLine{118 \textcolor{comment}{         * @return Entity}}
+\DoxyCodeLine{119 \textcolor{comment}{        */}}
+\DoxyCodeLine{120         virtual ::Entity entityGet(Name) = 0;}
+\DoxyCodeLine{121         \textcolor{comment}{/* @brief Get all entities of a specific type}}
+\DoxyCodeLine{122 \textcolor{comment}{         * @param EntityType}}
+\DoxyCodeLine{123 \textcolor{comment}{         * @return std::vector<Entity>}}
+\DoxyCodeLine{124 \textcolor{comment}{        */}}
+\DoxyCodeLine{125         \textcolor{keyword}{virtual} std::vector<::Entity> entityGetAllOfType(EntityType) = 0;}
+\DoxyCodeLine{126         \textcolor{comment}{/* @brief Get the Id of an entity by Name}}
+\DoxyCodeLine{127 \textcolor{comment}{         * @param Name}}
+\DoxyCodeLine{128 \textcolor{comment}{         * @return Id}}
+\DoxyCodeLine{129 \textcolor{comment}{        */}}
+\DoxyCodeLine{130         \textcolor{keyword}{virtual} Id entityGetId(Name) = 0;}
+\DoxyCodeLine{131         \textcolor{comment}{/* @brief Get the Name of an entity by Id}}
+\DoxyCodeLine{132 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{133 \textcolor{comment}{         * @return Name}}
+\DoxyCodeLine{134 \textcolor{comment}{        */}}
+\DoxyCodeLine{135         \textcolor{keyword}{virtual} Name entityGetName(Id) = 0;}
+\DoxyCodeLine{136         \textcolor{comment}{/* @brief Get the property of an entity by Id}}
+\DoxyCodeLine{137 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{138 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{139 \textcolor{comment}{         * @return std::vector<float>}}
+\DoxyCodeLine{140 \textcolor{comment}{        */}}
+\DoxyCodeLine{141         \textcolor{keyword}{virtual} std::vector<float> entityGetProperty(Id, Property) = 0;}
+\DoxyCodeLine{142         \textcolor{comment}{/* @brief Update the property of an entity by Id}}
+\DoxyCodeLine{143 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{144 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{145 \textcolor{comment}{         * @param int}}
+\DoxyCodeLine{146 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{147 \textcolor{comment}{        */}}
+\DoxyCodeLine{148         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityUpdate(Id, Property, \textcolor{keywordtype}{int}) = 0;}
+\DoxyCodeLine{149         \textcolor{comment}{/* @brief Update the property of an entity by Id}}
+\DoxyCodeLine{150 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{151 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{152 \textcolor{comment}{         * @param float}}
+\DoxyCodeLine{153 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{154 \textcolor{comment}{        */}}
+\DoxyCodeLine{155         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityUpdate(Id, Property, \textcolor{keywordtype}{float}) = 0;}
+\DoxyCodeLine{156         \textcolor{comment}{/* @brief Update the property of an entity by Id}}
+\DoxyCodeLine{157 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{158 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{159 \textcolor{comment}{         * @param std::vector<float>}}
+\DoxyCodeLine{160 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{161 \textcolor{comment}{        */}}
+\DoxyCodeLine{162         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityUpdate(Id, Property, std::vector<float>) = 0;}
+\DoxyCodeLine{163         \textcolor{comment}{/* @brief Update the property of an entity by Id}}
+\DoxyCodeLine{164 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{165 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{166 \textcolor{comment}{         * @param std::vector<int>}}
+\DoxyCodeLine{167 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{168 \textcolor{comment}{        */}}
+\DoxyCodeLine{169         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityUpdate(Id, Property, std::vector<int>) = 0;}
+\DoxyCodeLine{170         \textcolor{comment}{/* @brief Update the property of an entity by Id}}
+\DoxyCodeLine{171 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{172 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{173 \textcolor{comment}{         * @param Name}}
+\DoxyCodeLine{174 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{175 \textcolor{comment}{        */}}
+\DoxyCodeLine{176         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityUpdate(Id, Property, Name) = 0;}
+\DoxyCodeLine{177         \textcolor{comment}{/* @brief Push an entity to the entity list}}
+\DoxyCodeLine{178 \textcolor{comment}{         * @param Entity}}
+\DoxyCodeLine{179 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{180 \textcolor{comment}{        */}}
+\DoxyCodeLine{181         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityPush(\mbox{\hyperlink{classEntity}{::Entity}}) = 0;}
+\DoxyCodeLine{182         \textcolor{comment}{/* @brief Push an entity to the front of the entity list}}
+\DoxyCodeLine{183 \textcolor{comment}{         * @param Entity}}
+\DoxyCodeLine{184 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{185 \textcolor{comment}{        */}}
+\DoxyCodeLine{186         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityPush\_front(\mbox{\hyperlink{classEntity}{::Entity}}) = 0;}
+\DoxyCodeLine{187         \textcolor{comment}{/* @brief Remove an entity by Id}}
+\DoxyCodeLine{188 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{189 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{190 \textcolor{comment}{        */}}
+\DoxyCodeLine{191         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityRemove(Id) = 0;}
+\DoxyCodeLine{192         \textcolor{comment}{/* @brief Pop an entity from the entity list}}
+\DoxyCodeLine{193 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{194 \textcolor{comment}{        */}}
+\DoxyCodeLine{195         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityPop() = 0;}
+\DoxyCodeLine{196         \textcolor{comment}{/* @brief Pop an entity from the front of the entity list}}
+\DoxyCodeLine{197 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{198 \textcolor{comment}{        */}}
+\DoxyCodeLine{199         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityPop\_front() = 0;}
+\DoxyCodeLine{200         \textcolor{comment}{/* @brief Clear all entities}}
+\DoxyCodeLine{201 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{202 \textcolor{comment}{        */}}
+\DoxyCodeLine{203         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} entityClearAll() = 0;}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205         \textcolor{comment}{// Prop functions}}
+\DoxyCodeLine{206         \textcolor{comment}{/* @brief Get all props}}
+\DoxyCodeLine{207 \textcolor{comment}{         * @return std::vector<Prop>}}
+\DoxyCodeLine{208 \textcolor{comment}{        */}}
+\DoxyCodeLine{209         \textcolor{keyword}{virtual} std::vector<::Prop *> propGetAll() = 0;}
+\DoxyCodeLine{210         \textcolor{comment}{/* @brief Get a prop by Id}}
+\DoxyCodeLine{211 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{212 \textcolor{comment}{         * @return Prop}}
+\DoxyCodeLine{213 \textcolor{comment}{        */}}
+\DoxyCodeLine{214         virtual ::Prop propGet(Id) = 0;}
+\DoxyCodeLine{215         \textcolor{comment}{/* @brief get all props of a specific type}}
+\DoxyCodeLine{216 \textcolor{comment}{         * @param PropType}}
+\DoxyCodeLine{217 \textcolor{comment}{         * @return std::vector<Prop>}}
+\DoxyCodeLine{218 \textcolor{comment}{        */}}
+\DoxyCodeLine{219         \textcolor{keyword}{virtual} std::vector<::Prop> propGetAllOfType(PropType) = 0;}
+\DoxyCodeLine{220         \textcolor{comment}{/* @brief Get the property of a prop by Id}}
+\DoxyCodeLine{221 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{222 \textcolor{comment}{         * @return std::vector<float>}}
+\DoxyCodeLine{223 \textcolor{comment}{        */}}
+\DoxyCodeLine{224         \textcolor{keyword}{virtual} std::vector<float> propGetProperty(Id, Property) = 0;}
+\DoxyCodeLine{225         \textcolor{comment}{/* @brief Update the property of a prop by Id}}
+\DoxyCodeLine{226 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{227 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{228 \textcolor{comment}{         * @param int}}
+\DoxyCodeLine{229 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{230 \textcolor{comment}{        */}}
+\DoxyCodeLine{231         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propUpdate(Id, Property, \textcolor{keywordtype}{int}) = 0;}
+\DoxyCodeLine{232         \textcolor{comment}{/* @brief Update the property of a prop by Id}}
+\DoxyCodeLine{233 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{234 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{235 \textcolor{comment}{         * @param float}}
+\DoxyCodeLine{236 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{237 \textcolor{comment}{        */}}
+\DoxyCodeLine{238         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propUpdate(Id, Property, \textcolor{keywordtype}{float}) = 0;}
+\DoxyCodeLine{239         \textcolor{comment}{/* @brief Update the property of a prop by Id}}
+\DoxyCodeLine{240 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{241 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{242 \textcolor{comment}{         * @param std::vector<float>}}
+\DoxyCodeLine{243 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{244 \textcolor{comment}{        */}}
+\DoxyCodeLine{245         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propUpdate(Id, Property, std::vector<float>) = 0;}
+\DoxyCodeLine{246         \textcolor{comment}{/* @brief Update the property of a prop by Id}}
+\DoxyCodeLine{247 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{248 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{249 \textcolor{comment}{         * @param std::vector<int>}}
+\DoxyCodeLine{250 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{251 \textcolor{comment}{        */}}
+\DoxyCodeLine{252         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propUpdate(Id, Property, std::vector<int>) = 0;}
+\DoxyCodeLine{253         \textcolor{comment}{/* @brief Update the property of a prop by Id}}
+\DoxyCodeLine{254 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{255 \textcolor{comment}{         * @param Property}}
+\DoxyCodeLine{256 \textcolor{comment}{         * @param Name}}
+\DoxyCodeLine{257 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{258 \textcolor{comment}{        */}}
+\DoxyCodeLine{259         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propUpdate(Id, Property, Name) = 0;}
+\DoxyCodeLine{260         \textcolor{comment}{/* @brief Push a prop to the prop list}}
+\DoxyCodeLine{261 \textcolor{comment}{         * @param Prop}}
+\DoxyCodeLine{262 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{263 \textcolor{comment}{        */}}
+\DoxyCodeLine{264         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propPush(\mbox{\hyperlink{classProp}{::Prop}}) = 0;}
+\DoxyCodeLine{265         \textcolor{comment}{/* @brief Push a prop to the front of the prop list}}
+\DoxyCodeLine{266 \textcolor{comment}{         * @param Prop}}
+\DoxyCodeLine{267 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{268 \textcolor{comment}{        */}}
+\DoxyCodeLine{269         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propPush\_front(\mbox{\hyperlink{classProp}{::Prop}}) = 0;}
+\DoxyCodeLine{270         \textcolor{comment}{/* @brief Remove a prop by Id}}
+\DoxyCodeLine{271 \textcolor{comment}{         * @param Id}}
+\DoxyCodeLine{272 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{273 \textcolor{comment}{        */}}
+\DoxyCodeLine{274         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propRemove(Id) = 0;}
+\DoxyCodeLine{275         \textcolor{comment}{/* @brief Pop a prop from the prop list}}
+\DoxyCodeLine{276 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{277 \textcolor{comment}{        */}}
+\DoxyCodeLine{278         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propPop() = 0;}
+\DoxyCodeLine{279         \textcolor{comment}{/* @brief Pop a prop from the front of the prop list}}
+\DoxyCodeLine{280 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{281 \textcolor{comment}{        */}}
+\DoxyCodeLine{282         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propPop\_front() = 0;}
+\DoxyCodeLine{283         \textcolor{comment}{/* @brief Clear all props}}
+\DoxyCodeLine{284 \textcolor{comment}{         * @return bool}}
+\DoxyCodeLine{285 \textcolor{comment}{        */}}
+\DoxyCodeLine{286         \textcolor{keyword}{virtual} \textcolor{keywordtype}{bool} propClearAll() = 0;}
+\DoxyCodeLine{287 \};}
+
+\end{DoxyCode}

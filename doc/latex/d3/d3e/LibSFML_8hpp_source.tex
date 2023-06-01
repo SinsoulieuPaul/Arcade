@@ -1,0 +1,110 @@
+\hypertarget{LibSFML_8hpp_source}{}\doxysection{Lib\+SFML.\+hpp}
+\label{LibSFML_8hpp_source}\index{src/lib/graphical/SFML/LibSFML.hpp@{src/lib/graphical/SFML/LibSFML.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** LibSfml}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef LIBSFML\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{    \#define LIBSFML\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../IDisplayModule.hpp"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <SFML/Graphics.hpp>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <SFML/Audio.hpp>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <SFML/Window.hpp>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classLibSfml}{LibSfml}} : \textcolor{keyword}{public} \mbox{\hyperlink{classIDispModule}{IDispModule}} \{}
+\DoxyCodeLine{17     \textcolor{keyword}{public}:}
+\DoxyCodeLine{18         \textcolor{keyword}{class }\mbox{\hyperlink{classLibSfml_1_1LibSfmlException}{LibSfmlException}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{19             \textcolor{keyword}{public}:}
+\DoxyCodeLine{20                 \textcolor{keyword}{explicit} \mbox{\hyperlink{classLibSfml_1_1LibSfmlException}{LibSfmlException}}(\textcolor{keyword}{const} std::string \&message, \textcolor{keyword}{const} std::string \&component = \textcolor{stringliteral}{"{}Unknown"{}});}
+\DoxyCodeLine{21                 \textcolor{keyword}{const} \textcolor{keywordtype}{char} *\mbox{\hyperlink{classLibSfml_1_1LibSfmlException_a9082501a365b0a340d1b4c840b695546}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{22             \textcolor{keyword}{protected}:}
+\DoxyCodeLine{23             \textcolor{keyword}{private}:}
+\DoxyCodeLine{24                 std::string \_message;}
+\DoxyCodeLine{25         \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \mbox{\hyperlink{classLibSfml}{LibSfml}}();}
+\DoxyCodeLine{28         \mbox{\hyperlink{classLibSfml}{\string~LibSfml}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{comment}{// -\/-\/ IDisplayModule -\/-\/}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{keywordtype}{bool} initScreen() \textcolor{keyword}{override};}
+\DoxyCodeLine{33         \textcolor{keywordtype}{bool} display() \textcolor{keyword}{override};}
+\DoxyCodeLine{34         Key getUserInput() \textcolor{keyword}{override};}
+\DoxyCodeLine{35         \textcolor{keywordtype}{bool} drawEntity(\mbox{\hyperlink{classEntity}{Entity}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{36         \textcolor{keywordtype}{bool} drawEntity(std::vector<Entity *>) \textcolor{keyword}{override};}
+\DoxyCodeLine{37         \textcolor{keywordtype}{bool} drawProp(\mbox{\hyperlink{classProp}{Prop}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{38         \textcolor{keywordtype}{bool} drawProp(std::vector<Prop *>) \textcolor{keyword}{override};}
+\DoxyCodeLine{39         \textcolor{keywordtype}{bool} drawText(\mbox{\hyperlink{classText}{Text}} *);}
+\DoxyCodeLine{40         \textcolor{keywordtype}{bool} drawText(std::vector<Text *>) \textcolor{keyword}{override};}
+\DoxyCodeLine{41         \textcolor{keywordtype}{bool} clearAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{42         \textcolor{keywordtype}{bool} clearEntity(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{43         \textcolor{keywordtype}{bool} clearEntity(std::vector<Id>) \textcolor{keyword}{override};}
+\DoxyCodeLine{44         \textcolor{keywordtype}{bool} clearProp(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{45         \textcolor{keywordtype}{bool} clearProp(std::vector<Id>) \textcolor{keyword}{override};}
+\DoxyCodeLine{46         \textcolor{keywordtype}{bool} clearText(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{47         \textcolor{keywordtype}{bool} clearText(std::vector<Id>) \textcolor{keyword}{override};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49         \textcolor{keywordtype}{bool} addText(\mbox{\hyperlink{classText}{Text}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{50         \textcolor{keywordtype}{bool} addEntity(\mbox{\hyperlink{classEntity}{Entity}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{51         \textcolor{keywordtype}{bool} addProp(\mbox{\hyperlink{classProp}{Prop}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53         \textcolor{comment}{// Clear \& draw}}
+\DoxyCodeLine{54         \textcolor{keywordtype}{bool} update() \textcolor{keyword}{override};}
+\DoxyCodeLine{55         \textcolor{keywordtype}{bool} updateEntity(Id, \mbox{\hyperlink{classEntity}{Entity}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{56         \textcolor{keywordtype}{bool} updateEntity(std::vector<std::pair<Id, Entity *>>) \textcolor{keyword}{override};}
+\DoxyCodeLine{57         \textcolor{keywordtype}{bool} updateProp(Id, \mbox{\hyperlink{classProp}{Prop}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{58         \textcolor{keywordtype}{bool} updateProp(std::vector<std::pair<Id, Prop *>>) \textcolor{keyword}{override};}
+\DoxyCodeLine{59         \textcolor{keywordtype}{bool} updateText(Id, \mbox{\hyperlink{classText}{Text}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{60         \textcolor{keywordtype}{bool} updateText(std::vector<std::pair<Id, Text *>>) \textcolor{keyword}{override};}
+\DoxyCodeLine{61         \textcolor{comment}{// Puterror}}
+\DoxyCodeLine{62         \textcolor{keywordtype}{bool} displayError() \textcolor{keyword}{override};}
+\DoxyCodeLine{63         \textcolor{keywordtype}{bool} sceneSwitch() \textcolor{keyword}{override};}
+\DoxyCodeLine{64         \textcolor{comment}{// Useless}}
+\DoxyCodeLine{65         \textcolor{keywordtype}{int} getFPS() \textcolor{keyword}{override};}
+\DoxyCodeLine{66         \textcolor{comment}{// check if lib works}}
+\DoxyCodeLine{67         \textcolor{comment}{// Useless}}
+\DoxyCodeLine{68         \textcolor{keywordtype}{bool} debug() \textcolor{keyword}{override};}
+\DoxyCodeLine{69         std::vector<float> getRes() \textcolor{keyword}{override};}
+\DoxyCodeLine{70         std::vector<float> getSize() \textcolor{keyword}{override};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{73     \textcolor{keyword}{private}:}
+\DoxyCodeLine{74         \textcolor{comment}{// Functions}}
+\DoxyCodeLine{75         \textcolor{keywordtype}{void} destroyScreen();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         \textcolor{keywordtype}{void} renderPresent();}
+\DoxyCodeLine{78         \textcolor{keywordtype}{void} renderClear();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         sf::Font *createFont(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *file);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82         \textcolor{comment}{// void drawPixel(int x, int y, Color color);}}
+\DoxyCodeLine{83         \textcolor{comment}{// void drawPixel(int x, int y, const SDL\_Color \&color);}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         sf::IntRect createRect(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} w, \textcolor{keywordtype}{int} h);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87         sf::Texture *createTexture(std::string *file);}
+\DoxyCodeLine{88         sf::Sprite *createSprite(sf::Texture *texture);}
+\DoxyCodeLine{89         sf::Sprite *createSprite(sf::Texture *texture, sf::IntRect rect);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         sf::Text *createText(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *text, sf::Font *font, \textcolor{keywordtype}{int} size, sf::Color color);}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         \textcolor{keywordtype}{bool} drawSprite(std::string *path, sf::Vector2f pos);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95         \textcolor{comment}{// Variables}}
+\DoxyCodeLine{96         sf::RenderWindow *\_win;}
+\DoxyCodeLine{97         std::vector<Text *> \_texts;}
+\DoxyCodeLine{98         std::vector<Entity *> \_entities;}
+\DoxyCodeLine{99         std::vector<Prop *> \_props;}
+\DoxyCodeLine{100         std::map<std::string *, sf::Sprite *> \_sprites;}
+\DoxyCodeLine{101         \textcolor{keywordtype}{bool} \_running;}
+\DoxyCodeLine{102 \};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !LIBSFML\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

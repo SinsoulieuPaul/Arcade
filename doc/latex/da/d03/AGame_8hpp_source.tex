@@ -1,0 +1,82 @@
+\hypertarget{AGame_8hpp_source}{}\doxysection{AGame.\+hpp}
+\label{AGame_8hpp_source}\index{src/lib/games/AGame.hpp@{src/lib/games/AGame.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** AGame}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef AGAME\_HPP\_}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define AGAME\_HPP\_}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}IGameModule.hpp"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Prop.hpp"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}Entity.hpp"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{classAGame}{AGame}} : \textcolor{keyword}{public} \mbox{\hyperlink{classIGameModule}{IGameModule}} \{}
+\DoxyCodeLine{24     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{classAGame}{AGame}}();}
+\DoxyCodeLine{26         \mbox{\hyperlink{classAGame}{\string~AGame}}();}
+\DoxyCodeLine{30         State \mbox{\hyperlink{classAGame_a2702c98b4c96a13d7b5582ce93eb6db9}{systemInit}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{33         State \mbox{\hyperlink{classAGame_afe5fec581fba72e8669353b22db5917d}{systemStart}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{36         State \mbox{\hyperlink{classAGame_a2577531c3bd27c5b7b152bac07ac3b2d}{systemStop}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{39         State \mbox{\hyperlink{classAGame_aba126ca8718741918d10d66bad29a3d9}{systemClear}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{42         State \mbox{\hyperlink{classAGame_a86198adaf9adffc79fa110563d6157f5}{systemUpdate}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{45         State \mbox{\hyperlink{classAGame_ad85ae1e85576a8622db9064c53025a76}{systemGetState}}() \textcolor{keyword}{const override};}
+\DoxyCodeLine{48         \textcolor{comment}{// @return void}}
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} \mbox{\hyperlink{classAGame_a88416f940d6e6b1dc41a0aaa24b8644f}{systemSetState}}(State) \textcolor{keyword}{override};}
+\DoxyCodeLine{52         \textcolor{comment}{// @return void}}
+\DoxyCodeLine{53         \textcolor{keywordtype}{void} \mbox{\hyperlink{classAGame_a5f334bbe9bda6d8d11a861cae92a9ef5}{systemOnUserInput}}(\textcolor{keywordtype}{int}) \textcolor{keyword}{override};}
+\DoxyCodeLine{56         \textcolor{keywordtype}{void} \mbox{\hyperlink{classAGame_a6d11d5c0af6f1ef90d14f94385cfa0b0}{systemDebug}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58         \textcolor{comment}{// Entity functions}}
+\DoxyCodeLine{59         std::vector<Entity> entityGetAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{60         \mbox{\hyperlink{classEntity}{Entity}} entityGet(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{61         \mbox{\hyperlink{classEntity}{Entity}} entityGet(Name) \textcolor{keyword}{override};}
+\DoxyCodeLine{62         std::vector<Entity> entityGetAllOfType(EntityType) \textcolor{keyword}{override};}
+\DoxyCodeLine{63         Id entityGetId(Name) \textcolor{keyword}{override};}
+\DoxyCodeLine{64         Name entityGetName(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{65         std::vector<float> entityGetProperty(Id, Property) \textcolor{keyword}{override};}
+\DoxyCodeLine{66         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, \textcolor{keywordtype}{int}) \textcolor{keyword}{override};}
+\DoxyCodeLine{67         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, \textcolor{keywordtype}{float}) \textcolor{keyword}{override};}
+\DoxyCodeLine{68         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, std::vector<float>) \textcolor{keyword}{override};}
+\DoxyCodeLine{69         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, std::vector<int>) \textcolor{keyword}{override};}
+\DoxyCodeLine{70         \textcolor{keywordtype}{bool} entityUpdate(Id, Property, Name) \textcolor{keyword}{override};}
+\DoxyCodeLine{71         \textcolor{keywordtype}{bool} entityPush(\mbox{\hyperlink{classEntity}{Entity}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{72         \textcolor{keywordtype}{bool} entityPush\_front(\mbox{\hyperlink{classEntity}{Entity}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{73         \textcolor{keywordtype}{bool} entityRemove(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{74         \textcolor{keywordtype}{bool} entityPop() \textcolor{keyword}{override};}
+\DoxyCodeLine{75         \textcolor{keywordtype}{bool} entityPop\_front() \textcolor{keyword}{override};}
+\DoxyCodeLine{76         \textcolor{keywordtype}{bool} entityClearAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78         \textcolor{comment}{// Prop functions}}
+\DoxyCodeLine{79         std::vector<Prop *> propGetAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{80         \mbox{\hyperlink{classProp}{Prop}} propGet(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{81         std::vector<Prop> propGetAllOfType(PropType) \textcolor{keyword}{override};}
+\DoxyCodeLine{82         std::vector<float> propGetProperty(Id, Property) \textcolor{keyword}{override};}
+\DoxyCodeLine{83         \textcolor{keywordtype}{bool} propUpdate(Id, Property, \textcolor{keywordtype}{int}) \textcolor{keyword}{override};}
+\DoxyCodeLine{84         \textcolor{keywordtype}{bool} propUpdate(Id, Property, \textcolor{keywordtype}{float}) \textcolor{keyword}{override};}
+\DoxyCodeLine{85         \textcolor{keywordtype}{bool} propUpdate(Id, Property, std::vector<float>) \textcolor{keyword}{override};}
+\DoxyCodeLine{86         \textcolor{keywordtype}{bool} propUpdate(Id, Property, std::vector<int>) \textcolor{keyword}{override};}
+\DoxyCodeLine{87         \textcolor{keywordtype}{bool} propUpdate(Id, Property, Name) \textcolor{keyword}{override};}
+\DoxyCodeLine{88         \textcolor{keywordtype}{bool} propPush(\mbox{\hyperlink{classProp}{Prop}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{89         \textcolor{keywordtype}{bool} propPush\_front(\mbox{\hyperlink{classProp}{Prop}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{90         \textcolor{keywordtype}{bool} propRemove(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{91         \textcolor{keywordtype}{bool} propPop() \textcolor{keyword}{override};}
+\DoxyCodeLine{92         \textcolor{keywordtype}{bool} propPop\_front() \textcolor{keyword}{override};}
+\DoxyCodeLine{93         \textcolor{keywordtype}{bool} propClearAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     \textcolor{keyword}{private}:}
+\DoxyCodeLine{96         std::vector<Prop *> \_props;}
+\DoxyCodeLine{97         std::vector<Entity *> \_entities;}
+\DoxyCodeLine{98         State \_state;}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !AGAME\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

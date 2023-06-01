@@ -1,0 +1,727 @@
+\hypertarget{classSdl}{}\doxysection{Sdl Class Reference}
+\label{classSdl}\index{Sdl@{Sdl}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classSdl_a895d7474102b0e129e0e873ab2a82439}{init\+SDL}} ()
+\begin{DoxyCompactList}\small\item\em init\+SDL function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a573817cc645c059fd0dad0985afc81cb}{quit\+SDL}} ()
+\begin{DoxyCompactList}\small\item\em quit\+SDL function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Window $\ast$ \mbox{\hyperlink{classSdl_a1a04ad5ec98dfad170fe12d667f73f0f}{create\+Window}} (const char $\ast$title, int x, int y, int w, int h, Uint32 flags)
+\begin{DoxyCompactList}\small\item\em create\+Window function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_afc864d32f58eb6787be00ac592fea62d}{destroy\+Window}} (SDL\+\_\+\+Window $\ast$window)
+\begin{DoxyCompactList}\small\item\em destroy\+Window function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{classSdl_ab81a59f8f6fb36f044b7f10a11d188f3}{create\+Renderer}} (SDL\+\_\+\+Window $\ast$window, int index, Uint32 flags)
+\begin{DoxyCompactList}\small\item\em create\+Renderer function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a9f3fcf023c1750c3b1474e8c42255111}{destroy\+Renderer}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em destroy\+Renderer function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_acd07c52970c250d56f87860220207c85}{render\+Clear}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em render\+Clear function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a48cc6ff8aab498a1a45e7621ad06063e}{render\+Copy}} (SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$texture, const SDL\+\_\+\+Rect $\ast$srcrect, const SDL\+\_\+\+Rect $\ast$dstrect)
+\begin{DoxyCompactList}\small\item\em render\+Copy function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a9780c85772fa2b2f2986b24678e2b2bb}{render\+Copy\+Ex}} (SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Texture $\ast$texture, const SDL\+\_\+\+Rect $\ast$srcrect, const SDL\+\_\+\+Rect $\ast$dstrect, const double angle, const SDL\+\_\+\+Point $\ast$center, const SDL\+\_\+\+Renderer\+Flip flip)
+\begin{DoxyCompactList}\small\item\em render\+Copy\+Ex function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a1285b8668e6cc53f27ac2967ea76844f}{render\+Present}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em render\+Present function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_ab6858033f7e3495ca2b5ad61962b6938}{render\+Draw\+Point}} (SDL\+\_\+\+Renderer $\ast$renderer, int x, int y)
+\begin{DoxyCompactList}\small\item\em render\+Draw\+Point function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a6d7f7247d4c0ae40dfadb6d7db10df78}{set\+Render\+Draw\+Color}} (SDL\+\_\+\+Renderer $\ast$renderer, Uint8 r, Uint8 g, Uint8 b, Uint8 a)
+\begin{DoxyCompactList}\small\item\em render\+Draw\+Color function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classSdl_ad41644690e8c68f6f32d652cb2977b19}{create\+Texture\+From\+Surface}} (SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Surface $\ast$surface)
+\begin{DoxyCompactList}\small\item\em create\+Texture\+From\+Surface function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{classSdl_aef48a9a6a24c1e0ccbf1f542ca46bd9d}{load\+Texture}} (SDL\+\_\+\+Renderer $\ast$renderer, const char $\ast$file)
+\begin{DoxyCompactList}\small\item\em load\+Texture function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a8aa7d4464d2a7bf031ba733444b2534e}{destroy\+Texture}} (SDL\+\_\+\+Texture $\ast$texture)
+\begin{DoxyCompactList}\small\item\em destroy\+Texture function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a279a12a9402ea588685a96eaba417611}{query\+Texture}} (SDL\+\_\+\+Texture $\ast$texture, Uint32 $\ast$format, int $\ast$access, int $\ast$w, int $\ast$h)
+\begin{DoxyCompactList}\small\item\em query\+Texture function \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classSdl_a8a332169b631b81793d662fce41b4e01}{init\+IMG}} ()
+\begin{DoxyCompactList}\small\item\em init\+IMG function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a03a6f74d06eac7e3aff97a14ec67554e}{quit\+IMG}} ()
+\begin{DoxyCompactList}\small\item\em quit\+IMG function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classSdl_adfcfe09a28e1bb0902093d7d285954ba}{load\+BMP}} (const char $\ast$file)
+\begin{DoxyCompactList}\small\item\em load\+BMP function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classSdl_a0b40b92c9a530b32fc42bf52e59e5c75}{load\+IMG}} (const char $\ast$file)
+\begin{DoxyCompactList}\small\item\em load\+IMG function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a8d31f1f006d582d56f76bdca69aa8546}{free\+Surface}} (SDL\+\_\+\+Surface $\ast$surface)
+\begin{DoxyCompactList}\small\item\em free\+Surface function \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classSdl_a01885d6f99c348c49e9a1e1642aa0a91}{init\+TTF}} ()
+\begin{DoxyCompactList}\small\item\em init\+TTF function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a338194a87e6e63e21ec5add485b0be99}{quit\+TTF}} ()
+\begin{DoxyCompactList}\small\item\em quit\+TTF function \end{DoxyCompactList}\item 
+static TTF\+\_\+\+Font $\ast$ \mbox{\hyperlink{classSdl_a89c415157899f163c3cc02fd7a5af47a}{open\+Font}} (const char $\ast$file, int ptsize)
+\begin{DoxyCompactList}\small\item\em open\+Font function \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classSdl_a07e578011bd637fdb474ebec192e7ca8}{close\+Font}} (TTF\+\_\+\+Font $\ast$font)
+\begin{DoxyCompactList}\small\item\em close\+Font function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classSdl_ab51b7dbeef43054903b1abd6b193c5ad}{render\+Text\+\_\+\+Solid}} (TTF\+\_\+\+Font $\ast$font, const char $\ast$text, SDL\+\_\+\+Color fg)
+\begin{DoxyCompactList}\small\item\em render\+Text\+\_\+\+Solid function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classSdl_a8293db96844e7aeb6b3f02c51432b8e7}{render\+Text\+\_\+\+Shaded}} (TTF\+\_\+\+Font $\ast$font, const char $\ast$text, SDL\+\_\+\+Color fg, SDL\+\_\+\+Color bg)
+\begin{DoxyCompactList}\small\item\em render\+Text\+\_\+\+Shaded function \end{DoxyCompactList}\item 
+static SDL\+\_\+\+Surface $\ast$ \mbox{\hyperlink{classSdl_a6087833534c991e2f0a5885d763461ed}{render\+Text\+\_\+\+Blended}} (TTF\+\_\+\+Font $\ast$font, const char $\ast$text, SDL\+\_\+\+Color fg)
+\begin{DoxyCompactList}\small\item\em render\+Text\+\_\+\+Blended function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSdl_a07e578011bd637fdb474ebec192e7ca8}\label{classSdl_a07e578011bd637fdb474ebec192e7ca8}} 
+\index{Sdl@{Sdl}!closeFont@{closeFont}}
+\index{closeFont@{closeFont}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{closeFont()}{closeFont()}}
+{\footnotesize\ttfamily void Sdl\+::close\+Font (\begin{DoxyParamCaption}\item[{TTF\+\_\+\+Font $\ast$}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+close\+Font function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em TTF\+\_\+\+Font} & $\ast$font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_ab81a59f8f6fb36f044b7f10a11d188f3}\label{classSdl_ab81a59f8f6fb36f044b7f10a11d188f3}} 
+\index{Sdl@{Sdl}!createRenderer@{createRenderer}}
+\index{createRenderer@{createRenderer}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{createRenderer()}{createRenderer()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer $\ast$ Sdl\+::create\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{int}]{index,  }\item[{Uint32}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+create\+Renderer function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Window} & $\ast$window \\
+\hline
+{\em int} & index \\
+\hline
+{\em Uint32} & flags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Renderer $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_ad41644690e8c68f6f32d652cb2977b19}\label{classSdl_ad41644690e8c68f6f32d652cb2977b19}} 
+\index{Sdl@{Sdl}!createTextureFromSurface@{createTextureFromSurface}}
+\index{createTextureFromSurface@{createTextureFromSurface}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{createTextureFromSurface()}{createTextureFromSurface()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Sdl\+::create\+Texture\+From\+Surface (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Surface $\ast$}]{surface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+create\+Texture\+From\+Surface function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+{\em SDL\+\_\+\+Surface} & $\ast$surface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Texture $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a1a04ad5ec98dfad170fe12d667f73f0f}\label{classSdl_a1a04ad5ec98dfad170fe12d667f73f0f}} 
+\index{Sdl@{Sdl}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window $\ast$ Sdl\+::create\+Window (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{Uint32}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+create\+Window function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char $\ast$title \\
+\hline
+{\em int} & x \\
+\hline
+{\em int} & y \\
+\hline
+{\em int} & w \\
+\hline
+{\em int} & h \\
+\hline
+{\em Uint32} & flags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Window $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a9f3fcf023c1750c3b1474e8c42255111}\label{classSdl_a9f3fcf023c1750c3b1474e8c42255111}} 
+\index{Sdl@{Sdl}!destroyRenderer@{destroyRenderer}}
+\index{destroyRenderer@{destroyRenderer}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{destroyRenderer()}{destroyRenderer()}}
+{\footnotesize\ttfamily void Sdl\+::destroy\+Renderer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+destroy\+Renderer function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a8aa7d4464d2a7bf031ba733444b2534e}\label{classSdl_a8aa7d4464d2a7bf031ba733444b2534e}} 
+\index{Sdl@{Sdl}!destroyTexture@{destroyTexture}}
+\index{destroyTexture@{destroyTexture}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{destroyTexture()}{destroyTexture()}}
+{\footnotesize\ttfamily void Sdl\+::destroy\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+destroy\+Texture function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Texture} & $\ast$texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_afc864d32f58eb6787be00ac592fea62d}\label{classSdl_afc864d32f58eb6787be00ac592fea62d}} 
+\index{Sdl@{Sdl}!destroyWindow@{destroyWindow}}
+\index{destroyWindow@{destroyWindow}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{destroyWindow()}{destroyWindow()}}
+{\footnotesize\ttfamily void Sdl\+::destroy\+Window (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+destroy\+Window function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Window} & $\ast$window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a8d31f1f006d582d56f76bdca69aa8546}\label{classSdl_a8d31f1f006d582d56f76bdca69aa8546}} 
+\index{Sdl@{Sdl}!freeSurface@{freeSurface}}
+\index{freeSurface@{freeSurface}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{freeSurface()}{freeSurface()}}
+{\footnotesize\ttfamily void Sdl\+::free\+Surface (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Surface $\ast$}]{surface }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+free\+Surface function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Surface} & $\ast$surface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a8a332169b631b81793d662fce41b4e01}\label{classSdl_a8a332169b631b81793d662fce41b4e01}} 
+\index{Sdl@{Sdl}!initIMG@{initIMG}}
+\index{initIMG@{initIMG}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{initIMG()}{initIMG()}}
+{\footnotesize\ttfamily int Sdl\+::init\+IMG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+init\+IMG function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a895d7474102b0e129e0e873ab2a82439}\label{classSdl_a895d7474102b0e129e0e873ab2a82439}} 
+\index{Sdl@{Sdl}!initSDL@{initSDL}}
+\index{initSDL@{initSDL}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{initSDL()}{initSDL()}}
+{\footnotesize\ttfamily int Sdl\+::init\+SDL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+init\+SDL function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a01885d6f99c348c49e9a1e1642aa0a91}\label{classSdl_a01885d6f99c348c49e9a1e1642aa0a91}} 
+\index{Sdl@{Sdl}!initTTF@{initTTF}}
+\index{initTTF@{initTTF}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{initTTF()}{initTTF()}}
+{\footnotesize\ttfamily int Sdl\+::init\+TTF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+init\+TTF function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_adfcfe09a28e1bb0902093d7d285954ba}\label{classSdl_adfcfe09a28e1bb0902093d7d285954ba}} 
+\index{Sdl@{Sdl}!loadBMP@{loadBMP}}
+\index{loadBMP@{loadBMP}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{loadBMP()}{loadBMP()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Sdl\+::load\+BMP (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+load\+BMP function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char $\ast$file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Surface $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a0b40b92c9a530b32fc42bf52e59e5c75}\label{classSdl_a0b40b92c9a530b32fc42bf52e59e5c75}} 
+\index{Sdl@{Sdl}!loadIMG@{loadIMG}}
+\index{loadIMG@{loadIMG}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{loadIMG()}{loadIMG()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Sdl\+::load\+IMG (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+load\+IMG function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char $\ast$file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Surface $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_aef48a9a6a24c1e0ccbf1f542ca46bd9d}\label{classSdl_aef48a9a6a24c1e0ccbf1f542ca46bd9d}} 
+\index{Sdl@{Sdl}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Sdl\+::load\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+load\+Texture function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+{\em const} & char $\ast$file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a89c415157899f163c3cc02fd7a5af47a}\label{classSdl_a89c415157899f163c3cc02fd7a5af47a}} 
+\index{Sdl@{Sdl}!openFont@{openFont}}
+\index{openFont@{openFont}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{openFont()}{openFont()}}
+{\footnotesize\ttfamily TTF\+\_\+\+Font $\ast$ Sdl\+::open\+Font (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file,  }\item[{int}]{ptsize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+open\+Font function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em const} & char $\ast$file \\
+\hline
+{\em int} & ptsize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TTF\+\_\+\+Font $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a279a12a9402ea588685a96eaba417611}\label{classSdl_a279a12a9402ea588685a96eaba417611}} 
+\index{Sdl@{Sdl}!queryTexture@{queryTexture}}
+\index{queryTexture@{queryTexture}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{queryTexture()}{queryTexture()}}
+{\footnotesize\ttfamily void Sdl\+::query\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Texture $\ast$}]{texture,  }\item[{Uint32 $\ast$}]{format,  }\item[{int $\ast$}]{access,  }\item[{int $\ast$}]{w,  }\item[{int $\ast$}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+query\+Texture function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Texture} & $\ast$texture \\
+\hline
+{\em Uint32} & $\ast$format \\
+\hline
+{\em int} & $\ast$access \\
+\hline
+{\em int} & $\ast$w \\
+\hline
+{\em int} & $\ast$h \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a03a6f74d06eac7e3aff97a14ec67554e}\label{classSdl_a03a6f74d06eac7e3aff97a14ec67554e}} 
+\index{Sdl@{Sdl}!quitIMG@{quitIMG}}
+\index{quitIMG@{quitIMG}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{quitIMG()}{quitIMG()}}
+{\footnotesize\ttfamily void Sdl\+::quit\+IMG (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+quit\+IMG function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a573817cc645c059fd0dad0985afc81cb}\label{classSdl_a573817cc645c059fd0dad0985afc81cb}} 
+\index{Sdl@{Sdl}!quitSDL@{quitSDL}}
+\index{quitSDL@{quitSDL}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{quitSDL()}{quitSDL()}}
+{\footnotesize\ttfamily void Sdl\+::quit\+SDL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+quit\+SDL function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a338194a87e6e63e21ec5add485b0be99}\label{classSdl_a338194a87e6e63e21ec5add485b0be99}} 
+\index{Sdl@{Sdl}!quitTTF@{quitTTF}}
+\index{quitTTF@{quitTTF}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{quitTTF()}{quitTTF()}}
+{\footnotesize\ttfamily void Sdl\+::quit\+TTF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+quit\+TTF function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_acd07c52970c250d56f87860220207c85}\label{classSdl_acd07c52970c250d56f87860220207c85}} 
+\index{Sdl@{Sdl}!renderClear@{renderClear}}
+\index{renderClear@{renderClear}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderClear()}{renderClear()}}
+{\footnotesize\ttfamily void Sdl\+::render\+Clear (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Clear function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a48cc6ff8aab498a1a45e7621ad06063e}\label{classSdl_a48cc6ff8aab498a1a45e7621ad06063e}} 
+\index{Sdl@{Sdl}!renderCopy@{renderCopy}}
+\index{renderCopy@{renderCopy}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderCopy()}{renderCopy()}}
+{\footnotesize\ttfamily void Sdl\+::render\+Copy (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Texture $\ast$}]{texture,  }\item[{const SDL\+\_\+\+Rect $\ast$}]{srcrect,  }\item[{const SDL\+\_\+\+Rect $\ast$}]{dstrect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Copy function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+{\em SDL\+\_\+\+Texture} & $\ast$texture \\
+\hline
+{\em const} & SDL\+\_\+\+Rect $\ast$srcrect \\
+\hline
+{\em const} & SDL\+\_\+\+Rect $\ast$dstrect \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a9780c85772fa2b2f2986b24678e2b2bb}\label{classSdl_a9780c85772fa2b2f2986b24678e2b2bb}} 
+\index{Sdl@{Sdl}!renderCopyEx@{renderCopyEx}}
+\index{renderCopyEx@{renderCopyEx}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderCopyEx()}{renderCopyEx()}}
+{\footnotesize\ttfamily void Sdl\+::render\+Copy\+Ex (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Texture $\ast$}]{texture,  }\item[{const SDL\+\_\+\+Rect $\ast$}]{srcrect,  }\item[{const SDL\+\_\+\+Rect $\ast$}]{dstrect,  }\item[{const double}]{angle,  }\item[{const SDL\+\_\+\+Point $\ast$}]{center,  }\item[{const SDL\+\_\+\+Renderer\+Flip}]{flip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Copy\+Ex function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+{\em SDL\+\_\+\+Texture} & $\ast$texture \\
+\hline
+{\em const} & SDL\+\_\+\+Rect $\ast$srcrect \\
+\hline
+{\em const} & SDL\+\_\+\+Rect $\ast$dstrect \\
+\hline
+{\em const} & double angle \\
+\hline
+{\em const} & SDL\+\_\+\+Point $\ast$center \\
+\hline
+{\em const} & SDL\+\_\+\+Renderer\+Flip flip \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_ab6858033f7e3495ca2b5ad61962b6938}\label{classSdl_ab6858033f7e3495ca2b5ad61962b6938}} 
+\index{Sdl@{Sdl}!renderDrawPoint@{renderDrawPoint}}
+\index{renderDrawPoint@{renderDrawPoint}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderDrawPoint()}{renderDrawPoint()}}
+{\footnotesize\ttfamily void Sdl\+::render\+Draw\+Point (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Draw\+Point function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+{\em int} & x \\
+\hline
+{\em int} & y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a1285b8668e6cc53f27ac2967ea76844f}\label{classSdl_a1285b8668e6cc53f27ac2967ea76844f}} 
+\index{Sdl@{Sdl}!renderPresent@{renderPresent}}
+\index{renderPresent@{renderPresent}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderPresent()}{renderPresent()}}
+{\footnotesize\ttfamily void Sdl\+::render\+Present (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Present function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a6087833534c991e2f0a5885d763461ed}\label{classSdl_a6087833534c991e2f0a5885d763461ed}} 
+\index{Sdl@{Sdl}!renderText\_Blended@{renderText\_Blended}}
+\index{renderText\_Blended@{renderText\_Blended}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderText\_Blended()}{renderText\_Blended()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Sdl\+::render\+Text\+\_\+\+Blended (\begin{DoxyParamCaption}\item[{TTF\+\_\+\+Font $\ast$}]{font,  }\item[{const char $\ast$}]{text,  }\item[{SDL\+\_\+\+Color}]{fg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Text\+\_\+\+Blended function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em TTF\+\_\+\+Font} & $\ast$font \\
+\hline
+{\em const} & char $\ast$text \\
+\hline
+{\em SDL\+\_\+\+Color} & fg \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Surface $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a8293db96844e7aeb6b3f02c51432b8e7}\label{classSdl_a8293db96844e7aeb6b3f02c51432b8e7}} 
+\index{Sdl@{Sdl}!renderText\_Shaded@{renderText\_Shaded}}
+\index{renderText\_Shaded@{renderText\_Shaded}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderText\_Shaded()}{renderText\_Shaded()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Sdl\+::render\+Text\+\_\+\+Shaded (\begin{DoxyParamCaption}\item[{TTF\+\_\+\+Font $\ast$}]{font,  }\item[{const char $\ast$}]{text,  }\item[{SDL\+\_\+\+Color}]{fg,  }\item[{SDL\+\_\+\+Color}]{bg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Text\+\_\+\+Shaded function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em TTF\+\_\+\+Font} & $\ast$font \\
+\hline
+{\em const} & char $\ast$text \\
+\hline
+{\em SDL\+\_\+\+Color} & fg \\
+\hline
+{\em SDL\+\_\+\+Color} & bg \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Surface $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_ab51b7dbeef43054903b1abd6b193c5ad}\label{classSdl_ab51b7dbeef43054903b1abd6b193c5ad}} 
+\index{Sdl@{Sdl}!renderText\_Solid@{renderText\_Solid}}
+\index{renderText\_Solid@{renderText\_Solid}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{renderText\_Solid()}{renderText\_Solid()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Surface $\ast$ Sdl\+::render\+Text\+\_\+\+Solid (\begin{DoxyParamCaption}\item[{TTF\+\_\+\+Font $\ast$}]{font,  }\item[{const char $\ast$}]{text,  }\item[{SDL\+\_\+\+Color}]{fg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Text\+\_\+\+Solid function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em TTF\+\_\+\+Font} & $\ast$font \\
+\hline
+{\em const} & char $\ast$text \\
+\hline
+{\em SDL\+\_\+\+Color} & fg \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+SDL\+\_\+\+Surface $\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSdl_a6d7f7247d4c0ae40dfadb6d7db10df78}\label{classSdl_a6d7f7247d4c0ae40dfadb6d7db10df78}} 
+\index{Sdl@{Sdl}!setRenderDrawColor@{setRenderDrawColor}}
+\index{setRenderDrawColor@{setRenderDrawColor}!Sdl@{Sdl}}
+\doxysubsubsection{\texorpdfstring{setRenderDrawColor()}{setRenderDrawColor()}}
+{\footnotesize\ttfamily void Sdl\+::set\+Render\+Draw\+Color (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{Uint8}]{r,  }\item[{Uint8}]{g,  }\item[{Uint8}]{b,  }\item[{Uint8}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+render\+Draw\+Color function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em SDL\+\_\+\+Renderer} & $\ast$renderer \\
+\hline
+{\em Uint8} & r \\
+\hline
+{\em Uint8} & g \\
+\hline
+{\em Uint8} & b \\
+\hline
+{\em Uint8} & a \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/graphical/\+SDL2/SDL.\+hpp\item 
+src/lib/graphical/\+SDL2/SDL.\+cpp\end{DoxyCompactItemize}

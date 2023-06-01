@@ -1,0 +1,254 @@
+\hypertarget{classMenu}{}\doxysection{Menu Class Reference}
+\label{classMenu}\index{Menu@{Menu}}
+Inheritance diagram for Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{d8/ddb/classMenu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMenu_ad466dd83355124a6ed958430450bfe94}{Menu}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classMenu}{Menu}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMenu_a831387f51358cfb88cd018e1777bc980}{$\sim$\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classMenu}{Menu}} destructor. \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classMenu_af339e3a66f54bb6d4ec42021460fae05}{system\+Init}} () override
+\begin{DoxyCompactList}\small\item\em system\+Init function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMenu_a686032b32fa3c88005e9a09d334df593}{system\+On\+User\+Input}} (int) override
+\begin{DoxyCompactList}\small\item\em system\+On\+User\+Input function \end{DoxyCompactList}\item 
+State \mbox{\hyperlink{classMenu_a83eb5031e00697bfb6ddc591afb08501}{system\+Stop}} () override
+\begin{DoxyCompactList}\small\item\em system\+Stop function \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classText}{Text}} $\ast$ $>$ \mbox{\hyperlink{classMenu_af21186adc0f58a0ec5980138923334a4}{text\+Get\+All}} () override
+\begin{DoxyCompactList}\small\item\em text\+Get\+All function \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMenu_a6bff46a4d45abb54f52b85b13f9dee51}{get\+Score}} () const
+\begin{DoxyCompactList}\small\item\em get\+Score function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMenu_a5f6d653802934b4d5de31a7b8f824856}{\+\_\+init\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+init\+Menu function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMenu_abee7dec5702e400a5a391abbf111ee90}\label{classMenu_abee7dec5702e400a5a391abbf111ee90}} 
+int {\bfseries \+\_\+index}
+\item 
+\mbox{\Hypertarget{classMenu_ad1232a3dddee2d2510402a5cd8bdf5cb}\label{classMenu_ad1232a3dddee2d2510402a5cd8bdf5cb}} 
+float {\bfseries \+\_\+i}
+\item 
+\mbox{\Hypertarget{classMenu_a54e798118e41a3b9c61d56474db9797c}\label{classMenu_a54e798118e41a3b9c61d56474db9797c}} 
+State {\bfseries \+\_\+state}
+\item 
+\mbox{\Hypertarget{classMenu_a40db3f9cc2c692397d2839c25633b465}\label{classMenu_a40db3f9cc2c692397d2839c25633b465}} 
+std\+::vector$<$ \mbox{\hyperlink{classText}{Text}} $\ast$ $>$ {\bfseries \+\_\+texts}
+\item 
+\mbox{\Hypertarget{classMenu_a7538bc075852eef7fd989cd40b7f8084}\label{classMenu_a7538bc075852eef7fd989cd40b7f8084}} 
+std\+::string {\bfseries lib\+Path} = \char`\"{}./lib/\char`\"{}
+\item 
+\mbox{\Hypertarget{classMenu_a6065dc57c22bdc863c20dcd0e65cb10d}\label{classMenu_a6065dc57c22bdc863c20dcd0e65cb10d}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries \+\_\+game\+Libs}
+\item 
+\mbox{\Hypertarget{classMenu_aa7d2da397308c3d2a2ad40abcce2f212}\label{classMenu_aa7d2da397308c3d2a2ad40abcce2f212}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries \+\_\+graph\+Libs}
+\item 
+\mbox{\Hypertarget{classMenu_adeea4ed775ac267a98fafbf4bdc7917b}\label{classMenu_adeea4ed775ac267a98fafbf4bdc7917b}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries \+\_\+game\+Founds}
+\item 
+\mbox{\Hypertarget{classMenu_abcc10405d58d18c4b4e36c83c6082abf}\label{classMenu_abcc10405d58d18c4b4e36c83c6082abf}} 
+std\+::vector$<$ std\+::string $>$ {\bfseries \+\_\+graph\+Founds}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMenu_ad466dd83355124a6ed958430450bfe94}\label{classMenu_ad466dd83355124a6ed958430450bfe94}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classMenu}{Menu}} constructor. 
+
+\begin{DoxyAuthor}{Author}
+Zelie 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMenu_a831387f51358cfb88cd018e1777bc980}\label{classMenu_a831387f51358cfb88cd018e1777bc980}} 
+\index{Menu@{Menu}!````~Menu@{$\sim$Menu}}
+\index{````~Menu@{$\sim$Menu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{$\sim$Menu()}{~Menu()}}
+{\footnotesize\ttfamily Menu\+::$\sim$\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classMenu}{Menu}} destructor. 
+
+\begin{DoxyAuthor}{Author}
+Zelie 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMenu_a5f6d653802934b4d5de31a7b8f824856}\label{classMenu_a5f6d653802934b4d5de31a7b8f824856}} 
+\index{Menu@{Menu}!\_initMenu@{\_initMenu}}
+\index{\_initMenu@{\_initMenu}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{\_initMenu()}{\_initMenu()}}
+{\footnotesize\ttfamily void Menu\+::\+\_\+init\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\+\_\+init\+Menu function 
+
+\begin{DoxyAuthor}{Author}
+Zelie 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMenu_a6bff46a4d45abb54f52b85b13f9dee51}\label{classMenu_a6bff46a4d45abb54f52b85b13f9dee51}} 
+\index{Menu@{Menu}!getScore@{getScore}}
+\index{getScore@{getScore}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Menu\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGameModule_abbb5e75624726f224dfe09fe502d2734}{IGame\+Module}}.
+
+\mbox{\Hypertarget{classMenu_af339e3a66f54bb6d4ec42021460fae05}\label{classMenu_af339e3a66f54bb6d4ec42021460fae05}} 
+\index{Menu@{Menu}!systemInit@{systemInit}}
+\index{systemInit@{systemInit}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{systemInit()}{systemInit()}}
+{\footnotesize\ttfamily State Menu\+::system\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Init function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGameModule_ad1ee09490c847eddbbf4f6ee6d100051}{IGame\+Module}}.
+
+\mbox{\Hypertarget{classMenu_a686032b32fa3c88005e9a09d334df593}\label{classMenu_a686032b32fa3c88005e9a09d334df593}} 
+\index{Menu@{Menu}!systemOnUserInput@{systemOnUserInput}}
+\index{systemOnUserInput@{systemOnUserInput}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{systemOnUserInput()}{systemOnUserInput()}}
+{\footnotesize\ttfamily void Menu\+::system\+On\+User\+Input (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+On\+User\+Input function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGameModule_ad4a30d1cee37bb2b703872e51f49a34e}{IGame\+Module}}.
+
+\mbox{\Hypertarget{classMenu_a83eb5031e00697bfb6ddc591afb08501}\label{classMenu_a83eb5031e00697bfb6ddc591afb08501}} 
+\index{Menu@{Menu}!systemStop@{systemStop}}
+\index{systemStop@{systemStop}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{systemStop()}{systemStop()}}
+{\footnotesize\ttfamily State Menu\+::system\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+system\+Stop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+State 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGameModule_aca562a0b54e96e21096fe7ce88091c6c}{IGame\+Module}}.
+
+\mbox{\Hypertarget{classMenu_af21186adc0f58a0ec5980138923334a4}\label{classMenu_af21186adc0f58a0ec5980138923334a4}} 
+\index{Menu@{Menu}!textGetAll@{textGetAll}}
+\index{textGetAll@{textGetAll}!Menu@{Menu}}
+\doxysubsubsection{\texorpdfstring{textGetAll()}{textGetAll()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classText}{Text}} $\ast$ $>$ Menu\+::text\+Get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+text\+Get\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Text $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIGameModule_a443b10245f93b5a7076376c9416c993f}{IGame\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/\+Menu/Menu.\+hpp\item 
+src/core/\+Menu/Menu.\+cpp\end{DoxyCompactItemize}

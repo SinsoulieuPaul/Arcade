@@ -1,0 +1,122 @@
+\hypertarget{LibSDL_8hpp_source}{}\doxysection{Lib\+SDL.\+hpp}
+\label{LibSDL_8hpp_source}\index{src/lib/graphical/SDL2/LibSDL.hpp@{src/lib/graphical/SDL2/LibSDL.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** LibSdl}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef LIBSDL\_HPP\_}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{    \#define LIBSDL\_HPP\_}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../IDisplayModule.hpp"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}SDL.hpp"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{classLibSdl}{LibSdl}} : \textcolor{keyword}{public} \mbox{\hyperlink{classIDispModule}{IDispModule}} \{}
+\DoxyCodeLine{15     \textcolor{keyword}{public}:}
+\DoxyCodeLine{16         \textcolor{keyword}{enum} Color \{}
+\DoxyCodeLine{17             RED = 0xFF0000,}
+\DoxyCodeLine{18             GREEN = 0x00FF00,}
+\DoxyCodeLine{19             BLUE = 0x0000FF,}
+\DoxyCodeLine{20             YELLOW = 0xFFFF00,}
+\DoxyCodeLine{21             CYAN = 0x00FFFF,}
+\DoxyCodeLine{22             MAGENTA = 0xFF00FF,}
+\DoxyCodeLine{23             BLACK = 0x000000,}
+\DoxyCodeLine{24             WHITE = 0xFFFFFF}
+\DoxyCodeLine{25         \};}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27         \textcolor{keyword}{class }\mbox{\hyperlink{classLibSdl_1_1LibSdlException}{LibSdlException}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{28             \textcolor{keyword}{public}:}
+\DoxyCodeLine{29                 \textcolor{keyword}{explicit} \mbox{\hyperlink{classLibSdl_1_1LibSdlException}{LibSdlException}}(\textcolor{keyword}{const} std::string \&message, \textcolor{keyword}{const} std::string \&component = \textcolor{stringliteral}{"{}Unknown"{}});}
+\DoxyCodeLine{30                 \textcolor{keyword}{const} \textcolor{keywordtype}{char} *\mbox{\hyperlink{classLibSdl_1_1LibSdlException_ae4ac5f4e2c1598a7142f3643530d9a32}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{31             \textcolor{keyword}{protected}:}
+\DoxyCodeLine{32             \textcolor{keyword}{private}:}
+\DoxyCodeLine{33                 std::string \_message;}
+\DoxyCodeLine{34         \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         \mbox{\hyperlink{classLibSdl}{LibSdl}}();}
+\DoxyCodeLine{37         \mbox{\hyperlink{classLibSdl}{\string~LibSdl}}();}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39         \textcolor{comment}{// -\/-\/ IDisplayModule -\/-\/}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \textcolor{keywordtype}{bool} initScreen() \textcolor{keyword}{override};}
+\DoxyCodeLine{42         \textcolor{keywordtype}{bool} display() \textcolor{keyword}{override};}
+\DoxyCodeLine{43         Key getUserInput() \textcolor{keyword}{override};}
+\DoxyCodeLine{44         \textcolor{keywordtype}{bool} drawEntity(\mbox{\hyperlink{classEntity}{Entity}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{45         \textcolor{keywordtype}{bool} drawEntity(std::vector<Entity *>) \textcolor{keyword}{override};}
+\DoxyCodeLine{46         \textcolor{keywordtype}{bool} drawProp(\mbox{\hyperlink{classProp}{Prop}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{47         \textcolor{keywordtype}{bool} drawProp(std::vector<Prop *>) \textcolor{keyword}{override};}
+\DoxyCodeLine{48         \textcolor{keywordtype}{bool} drawText(\mbox{\hyperlink{classText}{Text}} *);}
+\DoxyCodeLine{49         \textcolor{keywordtype}{bool} drawText(std::vector<Text *>) \textcolor{keyword}{override};}
+\DoxyCodeLine{50         \textcolor{keywordtype}{bool} clearAll() \textcolor{keyword}{override};}
+\DoxyCodeLine{51         \textcolor{keywordtype}{bool} clearEntity(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{52         \textcolor{keywordtype}{bool} clearEntity(std::vector<Id>) \textcolor{keyword}{override};}
+\DoxyCodeLine{53         \textcolor{keywordtype}{bool} clearProp(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{54         \textcolor{keywordtype}{bool} clearProp(std::vector<Id>) \textcolor{keyword}{override};}
+\DoxyCodeLine{55         \textcolor{keywordtype}{bool} clearText(Id) \textcolor{keyword}{override};}
+\DoxyCodeLine{56         \textcolor{keywordtype}{bool} clearText(std::vector<Id>) \textcolor{keyword}{override};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58         \textcolor{keywordtype}{bool} addText(\mbox{\hyperlink{classText}{Text}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{59         \textcolor{keywordtype}{bool} addEntity(\mbox{\hyperlink{classEntity}{Entity}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{60         \textcolor{keywordtype}{bool} addProp(\mbox{\hyperlink{classProp}{Prop}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62         \textcolor{comment}{// Clear \& draw}}
+\DoxyCodeLine{63         \textcolor{keywordtype}{bool} update() \textcolor{keyword}{override};}
+\DoxyCodeLine{64         \textcolor{keywordtype}{bool} updateEntity(Id, \mbox{\hyperlink{classEntity}{Entity}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{65         \textcolor{keywordtype}{bool} updateEntity(std::vector<std::pair<Id, Entity *>>) \textcolor{keyword}{override};}
+\DoxyCodeLine{66         \textcolor{keywordtype}{bool} updateProp(Id, \mbox{\hyperlink{classProp}{Prop}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{67         \textcolor{keywordtype}{bool} updateProp(std::vector<std::pair<Id, Prop *>>) \textcolor{keyword}{override};}
+\DoxyCodeLine{68         \textcolor{keywordtype}{bool} updateText(Id, \mbox{\hyperlink{classText}{Text}} *) \textcolor{keyword}{override};}
+\DoxyCodeLine{69         \textcolor{keywordtype}{bool} updateText(std::vector<std::pair<Id, Text *>>) \textcolor{keyword}{override};}
+\DoxyCodeLine{70         \textcolor{comment}{// Puterror}}
+\DoxyCodeLine{71         \textcolor{keywordtype}{bool} displayError() \textcolor{keyword}{override};}
+\DoxyCodeLine{72         \textcolor{keywordtype}{bool} sceneSwitch() \textcolor{keyword}{override};}
+\DoxyCodeLine{73         \textcolor{comment}{// Useless}}
+\DoxyCodeLine{74         \textcolor{keywordtype}{int} getFPS() \textcolor{keyword}{override};}
+\DoxyCodeLine{75         \textcolor{comment}{// check if lib works}}
+\DoxyCodeLine{76         \textcolor{comment}{// Useless}}
+\DoxyCodeLine{77         \textcolor{keywordtype}{bool} debug() \textcolor{keyword}{override};}
+\DoxyCodeLine{78         std::vector<float> getRes() \textcolor{keyword}{override};}
+\DoxyCodeLine{79         std::vector<float> getSize() \textcolor{keyword}{override};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{82     \textcolor{keyword}{private}:}
+\DoxyCodeLine{83         \textcolor{comment}{// Functions}}
+\DoxyCodeLine{84         \textcolor{keywordtype}{void} destroyScreen();}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86         \textcolor{keywordtype}{void} initRender();}
+\DoxyCodeLine{87         \textcolor{keywordtype}{void} destroyRender();}
+\DoxyCodeLine{88         \textcolor{keywordtype}{void} renderPresent();}
+\DoxyCodeLine{89         \textcolor{keywordtype}{void} renderClear();}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91         TTF\_Font *createFont(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *file, \textcolor{keywordtype}{int} size);}
+\DoxyCodeLine{92         \textcolor{keywordtype}{void} destroyFont(TTF\_Font *font);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         \textcolor{keywordtype}{void} drawPixel(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, Color color);}
+\DoxyCodeLine{95         \textcolor{keywordtype}{void} drawPixel(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keyword}{const} SDL\_Color \&color);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         SDL\_Rect createRect(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{int} w, \textcolor{keywordtype}{int} h);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99         SDL\_Texture *createTexture(SDL\_Surface *surface);}
+\DoxyCodeLine{100         \textcolor{keywordtype}{void} drawTexture(SDL\_Texture *texture, SDL\_Rect rect);}
+\DoxyCodeLine{101         \textcolor{keywordtype}{void} destroyTexture(SDL\_Texture *texture);}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103         SDL\_Surface *createSurface(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *file);}
+\DoxyCodeLine{104         \textcolor{keywordtype}{void} destroySurface(SDL\_Surface *surface);}
+\DoxyCodeLine{105         SDL\_Surface *createTextSurface(\textcolor{keyword}{const} \textcolor{keywordtype}{char} *text, \textcolor{keyword}{const} SDL\_Color \&color, TTF\_Font *font);}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107         SDL\_Color createColor(\textcolor{keywordtype}{int} r, \textcolor{keywordtype}{int} g, \textcolor{keywordtype}{int} b, \textcolor{keywordtype}{int} a = 255);}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109         \textcolor{comment}{// Variables}}
+\DoxyCodeLine{110         SDL\_Window *\_win;}
+\DoxyCodeLine{111         SDL\_Renderer *\_render;}
+\DoxyCodeLine{112         std::vector<Text *> \_texts;}
+\DoxyCodeLine{113         \textcolor{keywordtype}{bool} \_running;}
+\DoxyCodeLine{114 \};}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !LIBSdl\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

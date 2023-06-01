@@ -1,0 +1,38 @@
+\hypertarget{Text_8hpp_source}{}\doxysection{Text.\+hpp}
+\label{Text_8hpp_source}\index{src/lib/games/Text.hpp@{src/lib/games/Text.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/OOP-\/400-\/LIL-\/4-\/1-\/arcade-\/bauchart.loic}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Text}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}IGameModule.hpp"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#ifndef TEXT\_HPP\_}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#define TEXT\_HPP\_}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classText}{Text}} \{}
+\DoxyCodeLine{14     \textcolor{keyword}{public}:}
+\DoxyCodeLine{15         \mbox{\hyperlink{classText}{\string~Text}}();}
+\DoxyCodeLine{16         \mbox{\hyperlink{classText}{Text}}(std::string *);}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18         \textcolor{comment}{// Setters}}
+\DoxyCodeLine{19         \textcolor{keywordtype}{void} setText(std::string *);}
+\DoxyCodeLine{20         \textcolor{keywordtype}{void} setProperty(Property, std::vector<float>);}
+\DoxyCodeLine{21         \textcolor{comment}{// Getters}}
+\DoxyCodeLine{22         std::string *getText();}
+\DoxyCodeLine{23         std::vector<float> getProperty(Property);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27         std::string *\_text;}
+\DoxyCodeLine{28         std::map<Property, std::vector<float>> \_properties;}
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} *\_clickAction;}
+\DoxyCodeLine{30 \};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* !TEXT\_HPP\_ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

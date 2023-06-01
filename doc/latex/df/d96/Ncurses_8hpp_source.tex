@@ -1,0 +1,42 @@
+\hypertarget{Ncurses_8hpp_source}{}\doxysection{Ncurses.\+hpp}
+\label{Ncurses_8hpp_source}\index{src/lib/graphical/Ncurses/Ncurses.hpp@{src/lib/graphical/Ncurses/Ncurses.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/*}}
+\DoxyCodeLine{2 \textcolor{comment}{** EPITECH PROJECT, 2023}}
+\DoxyCodeLine{3 \textcolor{comment}{** B-\/PDG-\/300-\/LIL-\/3-\/1-\/PDGRUSH3-\/ulysse.decottignies}}
+\DoxyCodeLine{4 \textcolor{comment}{** File description:}}
+\DoxyCodeLine{5 \textcolor{comment}{** Ncurses}}
+\DoxyCodeLine{6 \textcolor{comment}{*/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <curses.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classNcurses}{Ncurses}} \{}
+\DoxyCodeLine{13     \textcolor{keyword}{public}:}
+\DoxyCodeLine{14         \textcolor{keyword}{static} WINDOW *\_initscr(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{15         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \_endwin (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{16         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \_clear();}
+\DoxyCodeLine{17         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \_getch();}
+\DoxyCodeLine{18         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_printw(std::string str);}
+\DoxyCodeLine{19         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_refresh();}
+\DoxyCodeLine{20         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_timeout();}
+\DoxyCodeLine{21         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_keypad(WINDOW *, \textcolor{keywordtype}{bool});}
+\DoxyCodeLine{22         \textcolor{keyword}{static} \textcolor{keywordtype}{void} \_curs\_set(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{23         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \_mvaddch(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int});}
+\DoxyCodeLine{24         \textcolor{keyword}{static} \textcolor{keywordtype}{int} \_mvaddstr(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}, \textcolor{keyword}{const} \textcolor{keywordtype}{char} *);}
+\DoxyCodeLine{25     \textcolor{keyword}{private}:}
+\DoxyCodeLine{26     \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \textcolor{comment}{// Exception Class:}}
+\DoxyCodeLine{28     \textcolor{keyword}{class }\mbox{\hyperlink{classNcurses_1_1NcursesException}{NcursesException}} : \textcolor{keyword}{public} std::exception \{}
+\DoxyCodeLine{29         \textcolor{keyword}{public}:}
+\DoxyCodeLine{30             \textcolor{keyword}{explicit} \mbox{\hyperlink{classNcurses_1_1NcursesException}{NcursesException}}(\textcolor{keyword}{const} std::string \&message);}
+\DoxyCodeLine{31             \textcolor{keyword}{const} \textcolor{keywordtype}{char} *\mbox{\hyperlink{classNcurses_1_1NcursesException_a66edbe8d653f2d4e71cf79767333f2a7}{what}}() \textcolor{keyword}{const} \textcolor{keyword}{noexcept} \textcolor{keyword}{override};}
+\DoxyCodeLine{32         \textcolor{keyword}{protected}:}
+\DoxyCodeLine{33         \textcolor{keyword}{private}:}
+\DoxyCodeLine{34             std::string \_message;}
+\DoxyCodeLine{35     \};}
+\DoxyCodeLine{36 \};}
+
+\end{DoxyCode}

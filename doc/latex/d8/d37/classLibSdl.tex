@@ -1,0 +1,1127 @@
+\hypertarget{classLibSdl}{}\doxysection{Lib\+Sdl Class Reference}
+\label{classLibSdl}\index{LibSdl@{LibSdl}}
+Inheritance diagram for Lib\+Sdl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d8/d37/classLibSdl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classLibSdl_1_1LibSdlException}{Lib\+Sdl\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLibSdl_ade563303a4c1f9cbbe5a96110d6ae8c2}\label{classLibSdl_ade563303a4c1f9cbbe5a96110d6ae8c2}} 
+enum {\bfseries Color} \{ \newline
+{\bfseries RED} = 0x\+FF0000
+, {\bfseries GREEN} = 0x00\+FF00
+, {\bfseries BLUE} = 0x0000\+FF
+, {\bfseries YELLOW} = 0x\+FFFF00
+, \newline
+{\bfseries CYAN} = 0x00\+FFFF
+, {\bfseries MAGENTA} = 0x\+FF00\+FF
+, {\bfseries BLACK} = 0x000000
+, {\bfseries WHITE} = 0x\+FFFFFF
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classLibSdl_af3d26fbb6fa821a0db607e7e25043d76}{init\+Screen}} () override
+\begin{DoxyCompactList}\small\item\em init\+Screen function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_ad974967cf40f1cbfba378123978a0577}{display}} () override
+\begin{DoxyCompactList}\small\item\em display function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_af26bdd42b5f038a7b4c6d4ad4a25b74b}{destroy\+Screen}} () override
+\begin{DoxyCompactList}\small\item\em destroy\+Screen function \end{DoxyCompactList}\item 
+Key \mbox{\hyperlink{classLibSdl_accbe3d7820c278b61958025224e3e2c0}{get\+User\+Input}} () override
+\begin{DoxyCompactList}\small\item\em get\+User\+Input function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLibSdl_a5f73bf429c743b9f463deb8059f11f9c}{set\+User\+Input}} (Key) override
+\begin{DoxyCompactList}\small\item\em set\+User\+Input function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_aba24070c6dcc1380a2006fa36cddbd78}{draw\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em draw\+Entity function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a0c992f0430d4cfcc5a1d735b94248a24}{draw\+Entity}} (std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$) override
+\begin{DoxyCompactList}\small\item\em draw\+Entity function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a4793f4f13c9461b4b5873bca5b0ef971}{draw\+Prop}} (\mbox{\hyperlink{classProp}{Prop}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em draw\+Prop function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_ad4df6909b64497e8b950928002eb741b}{draw\+Prop}} (std\+::vector$<$ \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$) override
+\begin{DoxyCompactList}\small\item\em draw\+Prop function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a0e2ff63c3cefaa417e39d56d583430f5}{draw\+Text}} (\mbox{\hyperlink{classText}{Text}} $\ast$)
+\begin{DoxyCompactList}\small\item\em draw\+Text function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_ac199e3d4203068af016767b604a78282}{draw\+Text}} (std\+::vector$<$ \mbox{\hyperlink{classText}{Text}} $\ast$ $>$) override
+\begin{DoxyCompactList}\small\item\em draw\+Text function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_ab0a6a97351dc2fb9110a01bf7e4f0787}{clear\+All}} () override
+\begin{DoxyCompactList}\small\item\em clear\+All function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_ac931f9b302282a0ca95ed68ecd9d409e}{clear\+Entity}} () override
+\begin{DoxyCompactList}\small\item\em clear\+Entity function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a5af2af8fa7df412ba9d1f7f1b979d93c}{clear\+Entity}} (Id) override
+\begin{DoxyCompactList}\small\item\em clear\+Entity function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a87583c3b5e5e3e75dc0d7497d0bffd78}{clear\+Entity}} (std\+::vector$<$ Id $>$) override
+\begin{DoxyCompactList}\small\item\em clear\+Entity function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a7e97848dc39cb4a31915381001881763}{clear\+Prop}} (Id) override
+\begin{DoxyCompactList}\small\item\em clear\+Prop function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_afc560728ef0ea94bf5d4df5d47a061ec}{clear\+Prop}} (std\+::vector$<$ Id $>$) override
+\begin{DoxyCompactList}\small\item\em clear\+Prop function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_afef014ae571835a4a0310ca28faff749}{clear\+Text}} (Id) override
+\begin{DoxyCompactList}\small\item\em clear\+Text function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a4755547ff2d7ef9e9322913bfacfd744}{clear\+Text}} (std\+::vector$<$ Id $>$) override
+\begin{DoxyCompactList}\small\item\em clear\+Text function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_ab6e9a8f02be3b61859591e0f822ae5b9}{add\+Text}} (\mbox{\hyperlink{classText}{Text}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em add\+Text function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_aabf3456803eb385a1957be13d96e2022}{add\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em add\+Entity function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a5a0a6b45ff4b3574d95c82cf8f9bc3f5}{add\+Prop}} (\mbox{\hyperlink{classProp}{Prop}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em add\+Prop function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a0be8490776a6a743897bc879f4e73e17}{change\+Score}} (int add) override
+\begin{DoxyCompactList}\small\item\em change\+Score function \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLibSdl_a2de63514ffc34f9b5615d7fa5194d83e}{get\+Score}} () override
+\begin{DoxyCompactList}\small\item\em get\+Score function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a8cc300282dc787ae5b4204623b5b05d3}{set\+Score}} (int score) override
+\begin{DoxyCompactList}\small\item\em set\+Score function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_abd29e8958c1f74bd97b71fcad53533e2}{write\+Score}} () override
+\begin{DoxyCompactList}\small\item\em write\+Score function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a0d64aeda7339fe9465a9735ba83a594a}{update}} () override
+\begin{DoxyCompactList}\small\item\em update function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a3510e36da0281248a035ed167b5c2d03}{update\+Entity}} (Id, \mbox{\hyperlink{classEntity}{Entity}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em update\+Entity function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a178ac02c41ec30aad519dae0fd8f1b12}{update\+Entity}} (std\+::vector$<$ std\+::pair$<$ Id, \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$$>$) override
+\begin{DoxyCompactList}\small\item\em update\+Entity function \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{classLibSdl_aff2256339a05d01dfe48c280c69add57}{get\+Entities}} () override
+\begin{DoxyCompactList}\small\item\em get\+Entities function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a42b54b1df95776b1ba238b28fbd1866b}{update\+Prop}} (Id, \mbox{\hyperlink{classProp}{Prop}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em update\+Prop function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_aa0cf9974263586ee544fb1fda3623269}{update\+Prop}} (std\+::vector$<$ std\+::pair$<$ Id, \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$$>$) override
+\begin{DoxyCompactList}\small\item\em update\+Prop function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a56edd1845a37b69ecf9b5be4f7437900}{update\+Text}} (Id, \mbox{\hyperlink{classText}{Text}} $\ast$) override
+\begin{DoxyCompactList}\small\item\em update\+Text function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a1b2919b39bd1fff12070cec84bdca74b}{update\+Text}} (std\+::vector$<$ std\+::pair$<$ Id, \mbox{\hyperlink{classText}{Text}} $\ast$ $>$$>$) override
+\begin{DoxyCompactList}\small\item\em update\+Text function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_abca85a9c7aea7c820d9ec9a82abb95e8}{display\+Error}} () override
+\begin{DoxyCompactList}\small\item\em display\+Error function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a5b7d524aec736705b9a80728663f01e9}{scene\+Switch}} () override
+\begin{DoxyCompactList}\small\item\em scene\+Switch function \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLibSdl_a85afdb9bbc7ebcb0de88bfb14e038947}{get\+FPS}} () override
+\begin{DoxyCompactList}\small\item\em get\+FPS function \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLibSdl_a776847c52fbf3f927185e3ad9158ea83}{debug}} () override
+\begin{DoxyCompactList}\small\item\em debug function \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classLibSdl_a6d08876b255252850f42219c4bf463ee}{get\+Res}} () override
+\begin{DoxyCompactList}\small\item\em get\+Res function \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classLibSdl_a4608e7b6e52b53ed931ab4b9fcbd011a}{get\+Size}} () override
+\begin{DoxyCompactList}\small\item\em get\+Size function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLibSdl_aabf3456803eb385a1957be13d96e2022}\label{classLibSdl_aabf3456803eb385a1957be13d96e2022}} 
+\index{LibSdl@{LibSdl}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::add\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+add\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classEntity}{Entity}}} & $\ast$entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a481495ae33c08b748a3c543aa3cc60b5}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a5a0a6b45ff4b3574d95c82cf8f9bc3f5}\label{classLibSdl_a5a0a6b45ff4b3574d95c82cf8f9bc3f5}} 
+\index{LibSdl@{LibSdl}!addProp@{addProp}}
+\index{addProp@{addProp}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{addProp()}{addProp()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::add\+Prop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProp}{Prop}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+add\+Prop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classProp}{Prop}}} & $\ast$prop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a06f5e5b88706693748bef6f49b2b8db3}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_ab6e9a8f02be3b61859591e0f822ae5b9}\label{classLibSdl_ab6e9a8f02be3b61859591e0f822ae5b9}} 
+\index{LibSdl@{LibSdl}!addText@{addText}}
+\index{addText@{addText}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{addText()}{addText()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::add\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classText}{Text}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+add\+Text function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classText}{Text}}} & $\ast$text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a068b407acafa64632d9ca8024010ac34}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a0be8490776a6a743897bc879f4e73e17}\label{classLibSdl_a0be8490776a6a743897bc879f4e73e17}} 
+\index{LibSdl@{LibSdl}!changeScore@{changeScore}}
+\index{changeScore@{changeScore}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{changeScore()}{changeScore()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::change\+Score (\begin{DoxyParamCaption}\item[{int}]{add }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+change\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_afc15f719aa66cfda3be563091d99d620}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_ab0a6a97351dc2fb9110a01bf7e4f0787}\label{classLibSdl_ab0a6a97351dc2fb9110a01bf7e4f0787}} 
+\index{LibSdl@{LibSdl}!clearAll@{clearAll}}
+\index{clearAll@{clearAll}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearAll()}{clearAll()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+All function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a01073f4cf2b1bdb6ea12526cea96a9dc}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_ac931f9b302282a0ca95ed68ecd9d409e}\label{classLibSdl_ac931f9b302282a0ca95ed68ecd9d409e}} 
+\index{LibSdl@{LibSdl}!clearEntity@{clearEntity}}
+\index{clearEntity@{clearEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearEntity()}{clearEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_ad19879f6bbbefa48e642bca37231d3e3}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a5af2af8fa7df412ba9d1f7f1b979d93c}\label{classLibSdl_a5af2af8fa7df412ba9d1f7f1b979d93c}} 
+\index{LibSdl@{LibSdl}!clearEntity@{clearEntity}}
+\index{clearEntity@{clearEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearEntity()}{clearEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+Entity (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a36611ca2c19143e91f6a107aaade482b}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a87583c3b5e5e3e75dc0d7497d0bffd78}\label{classLibSdl_a87583c3b5e5e3e75dc0d7497d0bffd78}} 
+\index{LibSdl@{LibSdl}!clearEntity@{clearEntity}}
+\index{clearEntity@{clearEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearEntity()}{clearEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+Entity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Id $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+Id$>$} & ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_ac0384629a39fdd701eaf04027ffd03e1}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a7e97848dc39cb4a31915381001881763}\label{classLibSdl_a7e97848dc39cb4a31915381001881763}} 
+\index{LibSdl@{LibSdl}!clearProp@{clearProp}}
+\index{clearProp@{clearProp}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearProp()}{clearProp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+Prop (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+Prop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a3da6b32082ed89bea4a9b215c6741ec5}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_afc560728ef0ea94bf5d4df5d47a061ec}\label{classLibSdl_afc560728ef0ea94bf5d4df5d47a061ec}} 
+\index{LibSdl@{LibSdl}!clearProp@{clearProp}}
+\index{clearProp@{clearProp}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearProp()}{clearProp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+Prop (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Id $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+Prop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+Id$>$} & ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a74043f6227938040d5d5b99d94e4151e}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_afef014ae571835a4a0310ca28faff749}\label{classLibSdl_afef014ae571835a4a0310ca28faff749}} 
+\index{LibSdl@{LibSdl}!clearText@{clearText}}
+\index{clearText@{clearText}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearText()}{clearText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+Text (\begin{DoxyParamCaption}\item[{Id}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+Text function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_af3cbf983ffc05db1590378766b2726e5}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a4755547ff2d7ef9e9322913bfacfd744}\label{classLibSdl_a4755547ff2d7ef9e9322913bfacfd744}} 
+\index{LibSdl@{LibSdl}!clearText@{clearText}}
+\index{clearText@{clearText}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{clearText()}{clearText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::clear\+Text (\begin{DoxyParamCaption}\item[{std\+::vector$<$ Id $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+clear\+Text function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+Id$>$} & ids \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_ae79b1e683261ce12d91216337ce55b6d}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a776847c52fbf3f927185e3ad9158ea83}\label{classLibSdl_a776847c52fbf3f927185e3ad9158ea83}} 
+\index{LibSdl@{LibSdl}!debug@{debug}}
+\index{debug@{debug}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+debug function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a0b9588f1a0bc076139bc86577b426845}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_af26bdd42b5f038a7b4c6d4ad4a25b74b}\label{classLibSdl_af26bdd42b5f038a7b4c6d4ad4a25b74b}} 
+\index{LibSdl@{LibSdl}!destroyScreen@{destroyScreen}}
+\index{destroyScreen@{destroyScreen}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{destroyScreen()}{destroyScreen()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::destroy\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+destroy\+Screen function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a06ea47b5a94e1b9f22d760e981b974f9}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_ad974967cf40f1cbfba378123978a0577}\label{classLibSdl_ad974967cf40f1cbfba378123978a0577}} 
+\index{LibSdl@{LibSdl}!display@{display}}
+\index{display@{display}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+display function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a228e5c9521ccaa32fa4676bc84f2a36a}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_abca85a9c7aea7c820d9ec9a82abb95e8}\label{classLibSdl_abca85a9c7aea7c820d9ec9a82abb95e8}} 
+\index{LibSdl@{LibSdl}!displayError@{displayError}}
+\index{displayError@{displayError}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{displayError()}{displayError()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::display\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+display\+Error function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a744cc928e4819a47acd4e7ff23942d06}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_aba24070c6dcc1380a2006fa36cddbd78}\label{classLibSdl_aba24070c6dcc1380a2006fa36cddbd78}} 
+\index{LibSdl@{LibSdl}!drawEntity@{drawEntity}}
+\index{drawEntity@{drawEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{drawEntity()}{drawEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::draw\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classEntity}{Entity}}} & $\ast$entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a235ec1eff7dc35c58458b276ae92fcab}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a0c992f0430d4cfcc5a1d735b94248a24}\label{classLibSdl_a0c992f0430d4cfcc5a1d735b94248a24}} 
+\index{LibSdl@{LibSdl}!drawEntity@{drawEntity}}
+\index{drawEntity@{drawEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{drawEntity()}{drawEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::draw\+Entity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+Entity} & $\ast$$>$ entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_ab572facd44528b8508e9959834c17e6b}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a4793f4f13c9461b4b5873bca5b0ef971}\label{classLibSdl_a4793f4f13c9461b4b5873bca5b0ef971}} 
+\index{LibSdl@{LibSdl}!drawProp@{drawProp}}
+\index{drawProp@{drawProp}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{drawProp()}{drawProp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::draw\+Prop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProp}{Prop}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw\+Prop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classProp}{Prop}}} & $\ast$prop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_ae5181d30655f4c09af120d2f5a131513}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_ad4df6909b64497e8b950928002eb741b}\label{classLibSdl_ad4df6909b64497e8b950928002eb741b}} 
+\index{LibSdl@{LibSdl}!drawProp@{drawProp}}
+\index{drawProp@{drawProp}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{drawProp()}{drawProp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::draw\+Prop (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw\+Prop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+Prop} & $\ast$$>$ props \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_abf1377cf301cceec745a5d1f12a498dc}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_ac199e3d4203068af016767b604a78282}\label{classLibSdl_ac199e3d4203068af016767b604a78282}} 
+\index{LibSdl@{LibSdl}!drawText@{drawText}}
+\index{drawText@{drawText}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::draw\+Text (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classText}{Text}} $\ast$ $>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+draw\+Text function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$\+Text} & $\ast$$>$ texts \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a66eb131f650b6c38a33f0f48f6a98da1}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a0e2ff63c3cefaa417e39d56d583430f5}\label{classLibSdl_a0e2ff63c3cefaa417e39d56d583430f5}} 
+\index{LibSdl@{LibSdl}!drawText@{drawText}}
+\index{drawText@{drawText}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::draw\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classText}{Text}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw\+Text function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{classText}{Text}}} & $\ast$text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a6bca57babe359068661a4efc16c09431}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_aff2256339a05d01dfe48c280c69add57}\label{classLibSdl_aff2256339a05d01dfe48c280c69add57}} 
+\index{LibSdl@{LibSdl}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ Lib\+Sdl\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get\+Entities function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Entity $\ast$$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_ac92a03ede61155b27571f41427c0879a}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a85afdb9bbc7ebcb0de88bfb14e038947}\label{classLibSdl_a85afdb9bbc7ebcb0de88bfb14e038947}} 
+\index{LibSdl@{LibSdl}!getFPS@{getFPS}}
+\index{getFPS@{getFPS}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{getFPS()}{getFPS()}}
+{\footnotesize\ttfamily int Lib\+Sdl\+::get\+FPS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get\+FPS function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a0efb6616c9c4508583f92e4040e93e26}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a6d08876b255252850f42219c4bf463ee}\label{classLibSdl_a6d08876b255252850f42219c4bf463ee}} 
+\index{LibSdl@{LibSdl}!getRes@{getRes}}
+\index{getRes@{getRes}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{getRes()}{getRes()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Lib\+Sdl\+::get\+Res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get\+Res function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a2f0bfbb7a39f9dad54d5dd63c8aaa315}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a2de63514ffc34f9b5615d7fa5194d83e}\label{classLibSdl_a2de63514ffc34f9b5615d7fa5194d83e}} 
+\index{LibSdl@{LibSdl}!getScore@{getScore}}
+\index{getScore@{getScore}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily int Lib\+Sdl\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a5cb0f7e16e71d52a33501b457035f91b}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a4608e7b6e52b53ed931ab4b9fcbd011a}\label{classLibSdl_a4608e7b6e52b53ed931ab4b9fcbd011a}} 
+\index{LibSdl@{LibSdl}!getSize@{getSize}}
+\index{getSize@{getSize}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ Lib\+Sdl\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get\+Size function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$float$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a1c7bc3d5dfa6fae792d8ed1a0b385326}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_accbe3d7820c278b61958025224e3e2c0}\label{classLibSdl_accbe3d7820c278b61958025224e3e2c0}} 
+\index{LibSdl@{LibSdl}!getUserInput@{getUserInput}}
+\index{getUserInput@{getUserInput}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{getUserInput()}{getUserInput()}}
+{\footnotesize\ttfamily Key Lib\+Sdl\+::get\+User\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+get\+User\+Input function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Key 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a4b75e7aa0a8037dcbdf05fa890e50c8a}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_af3d26fbb6fa821a0db607e7e25043d76}\label{classLibSdl_af3d26fbb6fa821a0db607e7e25043d76}} 
+\index{LibSdl@{LibSdl}!initScreen@{initScreen}}
+\index{initScreen@{initScreen}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{initScreen()}{initScreen()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::init\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+init\+Screen function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a4c4f0aeb9e1aa8e8faee7fa5f195ac81}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a5b7d524aec736705b9a80728663f01e9}\label{classLibSdl_a5b7d524aec736705b9a80728663f01e9}} 
+\index{LibSdl@{LibSdl}!sceneSwitch@{sceneSwitch}}
+\index{sceneSwitch@{sceneSwitch}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{sceneSwitch()}{sceneSwitch()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::scene\+Switch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+scene\+Switch function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a99bf1d21e31fd33bc42fa2727b9ca442}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a8cc300282dc787ae5b4204623b5b05d3}\label{classLibSdl_a8cc300282dc787ae5b4204623b5b05d3}} 
+\index{LibSdl@{LibSdl}!setScore@{setScore}}
+\index{setScore@{setScore}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{setScore()}{setScore()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & score \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a63a9fa976c4ff3abb243c26feeb65931}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a5f73bf429c743b9f463deb8059f11f9c}\label{classLibSdl_a5f73bf429c743b9f463deb8059f11f9c}} 
+\index{LibSdl@{LibSdl}!setUserInput@{setUserInput}}
+\index{setUserInput@{setUserInput}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{setUserInput()}{setUserInput()}}
+{\footnotesize\ttfamily void Lib\+Sdl\+::set\+User\+Input (\begin{DoxyParamCaption}\item[{Key}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+set\+User\+Input function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a173186c8e91d0ca8878c09501e4ec1b5}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a0d64aeda7339fe9465a9735ba83a594a}\label{classLibSdl_a0d64aeda7339fe9465a9735ba83a594a}} 
+\index{LibSdl@{LibSdl}!update@{update}}
+\index{update@{update}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_aa0b60b43d7382280d0c7bd0fb0bc0d08}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a3510e36da0281248a035ed167b5c2d03}\label{classLibSdl_a3510e36da0281248a035ed167b5c2d03}} 
+\index{LibSdl@{LibSdl}!updateEntity@{updateEntity}}
+\index{updateEntity@{updateEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{updateEntity()}{updateEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::update\+Entity (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em \mbox{\hyperlink{classEntity}{Entity}}} & $\ast$entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a83a699ef7efabbc76e298a343491dba1}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a178ac02c41ec30aad519dae0fd8f1b12}\label{classLibSdl_a178ac02c41ec30aad519dae0fd8f1b12}} 
+\index{LibSdl@{LibSdl}!updateEntity@{updateEntity}}
+\index{updateEntity@{updateEntity}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{updateEntity()}{updateEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::update\+Entity (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ Id, \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update\+Entity function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::pair$<$\+Id,\mbox{\hyperlink{classEntity}{Entity}}} & $\ast$$>$$>$ entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a27a581fa0081362b7259a3e33953d23a}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a42b54b1df95776b1ba238b28fbd1866b}\label{classLibSdl_a42b54b1df95776b1ba238b28fbd1866b}} 
+\index{LibSdl@{LibSdl}!updateProp@{updateProp}}
+\index{updateProp@{updateProp}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{updateProp()}{updateProp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::update\+Prop (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{\mbox{\hyperlink{classProp}{Prop}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update\+Prop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em \mbox{\hyperlink{classProp}{Prop}}} & $\ast$prop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a3eb21607c2fa6130fcdfcb1491b6eecc}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_aa0cf9974263586ee544fb1fda3623269}\label{classLibSdl_aa0cf9974263586ee544fb1fda3623269}} 
+\index{LibSdl@{LibSdl}!updateProp@{updateProp}}
+\index{updateProp@{updateProp}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{updateProp()}{updateProp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::update\+Prop (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ Id, \mbox{\hyperlink{classProp}{Prop}} $\ast$ $>$$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update\+Prop function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::pair$<$\+Id,\mbox{\hyperlink{classProp}{Prop}}} & $\ast$$>$$>$ props \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a69ace965c1cea2f568e340c66c94bdf9}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a56edd1845a37b69ecf9b5be4f7437900}\label{classLibSdl_a56edd1845a37b69ecf9b5be4f7437900}} 
+\index{LibSdl@{LibSdl}!updateText@{updateText}}
+\index{updateText@{updateText}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{updateText()}{updateText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::update\+Text (\begin{DoxyParamCaption}\item[{Id}]{,  }\item[{\mbox{\hyperlink{classText}{Text}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update\+Text function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & id \\
+\hline
+{\em \mbox{\hyperlink{classText}{Text}}} & $\ast$text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_adf9aa5d70f7a06576da0451c28b20dcf}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_a1b2919b39bd1fff12070cec84bdca74b}\label{classLibSdl_a1b2919b39bd1fff12070cec84bdca74b}} 
+\index{LibSdl@{LibSdl}!updateText@{updateText}}
+\index{updateText@{updateText}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{updateText()}{updateText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::update\+Text (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ Id, \mbox{\hyperlink{classText}{Text}} $\ast$ $>$$>$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+update\+Text function 
+
+\begin{DoxyAuthor}{Author}
+Louis 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::vector$<$std\+::pair$<$\+Id,\mbox{\hyperlink{classText}{Text}}} & $\ast$$>$$>$ texts \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a303194194103fb8c4349fc5004f9da09}{IDisp\+Module}}.
+
+\mbox{\Hypertarget{classLibSdl_abd29e8958c1f74bd97b71fcad53533e2}\label{classLibSdl_abd29e8958c1f74bd97b71fcad53533e2}} 
+\index{LibSdl@{LibSdl}!writeScore@{writeScore}}
+\index{writeScore@{writeScore}!LibSdl@{LibSdl}}
+\doxysubsubsection{\texorpdfstring{writeScore()}{writeScore()}}
+{\footnotesize\ttfamily bool Lib\+Sdl\+::write\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+write\+Score function 
+
+\begin{DoxyAuthor}{Author}
+Paul 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIDispModule_a44d6b694e6b2a054162fc6692a68cf76}{IDisp\+Module}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/lib/graphical/\+SDL2/Lib\+SDL.\+hpp\item 
+src/lib/graphical/\+SDL2/Lib\+SDL.\+cpp\end{DoxyCompactItemize}
